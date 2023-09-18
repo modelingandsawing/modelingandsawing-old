@@ -1,23 +1,21 @@
 div#container {
-    width: calc(200px + (600 - 200) * ((100vw - 320px) / (1440 - 320)));
-    margin-top: 70px;
-    margin-bottom: 100px;
-    padding-top: 50px;
-    padding-right: 10%;
-    padding-left: 10%;
-    padding-bottom: 50px;
-    background-color: rgb(19, 21, 22);
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
+  width: min(700px, 90dvw);
+  margin-top: 70px;
+  margin-bottom: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: #f0e387;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
 }
 
 div#container > img {
-    max-width: 100%;
-    height: auto;
-    width: auto;
+  max-width: 100%;
+  height: auto;
+  width: auto;
 }

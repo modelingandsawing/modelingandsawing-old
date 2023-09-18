@@ -7,6 +7,7 @@ body {
   margin: 0;
   border-color: #736b5e;
   color: #ded6ca;
+  font-size: 20px;
 }
 
 body {
@@ -14,16 +15,16 @@ body {
 }
 
 ::-webkit-scrollbar {
-    background-color: rgb(26, 28, 29);
-    color: rgb(173, 166, 156);
+  background-color: rgb(26, 28, 29);
+  color: rgb(173, 166, 156);
 }
 
 ::-webkit-scrollbar-corner {
-    background-color: rgb(19, 21, 22);
+  background-color: rgb(19, 21, 22);
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: rgb(55, 60, 62);
+  background-color: rgb(55, 60, 62);
 }
 
 header {
@@ -35,7 +36,7 @@ header {
   align-items: center;
   z-index: 9999;
   background-color: rgb(19, 21, 22);
-  color: #f6c934;
+  color: #f0e387;
 }
 
 header > * {
@@ -147,9 +148,10 @@ div#title {
   -ms-transform: translateX(-50%);
   -o-transform: translateX(-50%);
   font-family: "Noto Serif", serif;
-  font-size: calc(20px + (50 - 20) * ((100vw - 320px) / (1440 - 320)));
-  text-shadow: 2px 2px 2px black;
+  font-size: 40px;
   margin-top: 130px;
+  text-align: center;
+  color: #f0e387;
 }
 
 div#footer {
