@@ -1,38 +1,59 @@
 <!DOCTYPE html>
 <html lang="ru">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="icon" href="../../images/icon.png">
-    <link rel="stylesheet" href="../../styles/template.css">
-    <link rel="stylesheet" href="../../styles/contact.css">
-</head>
+    <link rel="icon" href="../../images/icon.png" />
+    <link rel="stylesheet" href="../../styles/template.css" />
+    <link rel="stylesheet" href="../../styles/contact.css" />
+  </head>
 
-<body>
+  <body>
     <!-- Header -->
     <header>
-        <div id="change-language">
-            <p id="title-change-language" onclick="showLanguageMenu()">ЯЗЫК</p>
-            <div id="select-language">
-                <!-- <div class="language" onclick="redirect('../../other-languages/en/')">English</div> -->
-                <div class="language" onclick="redirect('../../contact.html')">Deutsch</div>
-                <div class="language" onclick="redirect('../../other-languages/ru/contact.html')">Русский</div>
-                <div class="language" onclick="redirect('../../other-languages/uk/contact.html')">Українська</div>
-            </div>
+      <div id="change-language">
+        <p id="icon-change-language" onclick="showLanguageMenu()">ЯЗЫК</p>
+        <div id="select-language">
+          <!-- <div class="language" onclick="redirect('../../other-languages/en/')">English</div> -->
+          <div class="language" onclick="redirect('../../contact.html')">
+            Deutsch
+          </div>
+          <div
+            class="language"
+            onclick="redirect('../../other-languages/ru/contact.html')"
+          >
+            Русский
+          </div>
+          <div
+            class="language"
+            onclick="redirect('../../other-languages/uk/contact.html')"
+          >
+            Українська
+          </div>
         </div>
-        <div id="header-title">
-            <p>Михалчич Любовь</p>
+      </div>
+      <div id="header-title">
+        <p>Михалчич Любовь</p>
+      </div>
+      <div id="explorer">
+        <div class="explorer-elem" onclick="redirect('./index.html')">
+          ГЛАВНАЯ
         </div>
-        <div id="explorer">
-            <div class="explorer-elem" onclick="redirect('./index.html')">ГЛАВНАЯ</div>
-            <div class="explorer-elem" onclick="redirect('./wedding-dresses.html')">СВАДЕБНЫЕ ПЛАТЬЯ</div>
-            <div class="explorer-elem" onclick="redirect('./gallery.html')">ФОТОГАЛЕРЕЯ</div>
-            <div class="explorer-elem" onclick="redirect('./reviews.html')">КУРСЫ КРОЙКИ И ШИТЬЯ</div>
-            <div class="explorer-elem" onclick="redirect('./contact.html')">КОНТАКТЫ</div>
+        <div class="explorer-elem" onclick="redirect('./wedding-dresses.html')">
+          СВАДЕБНЫЕ ПЛАТЬЯ
         </div>
+        <div class="explorer-elem" onclick="redirect('./gallery.html')">
+          ФОТОГАЛЕРЕЯ
+        </div>
+        <div class="explorer-elem" onclick="redirect('./reviews.html')">
+          КУРСЫ КРОЙКИ И ШИТЬЯ
+        </div>
+        <div class="explorer-elem" onclick="redirect('./contact.html')">
+          КОНТАКТЫ
+        </div>
+      </div>
     </header>
 
     <!-- Background image -->
@@ -43,58 +64,96 @@
 
     <!-- Container -->
     <div id="container">
-        <h2>Напишите мне</h2>
-        <hr>
-        <!-- Contact form -->
-        <form>
-            <div>
-                <input type="text" name="name" id="name" value="" class="input-block-level" placeholder="Ваше имя">
-            </div>
-            <div>
-                <input type="email" name="email" id="email" value="" class="input-block-level" placeholder="Email"
-                    required>
-            </div>
-            <div>
-                <textarea rows="11" name="message" id="message" class="input-block-level" placeholder="Текст сообщения"
-                    required></textarea>
-            </div>
-            <div id="submit-form">
-                <button name="submit" id="submitButton" class="btn btn-info pull-right"
-                    onclick="return sendEmail('Спасибо. Ваше сообщение отправлено.');"
-                    title="Кликните по кнопке чтобы Отправить ваше сообщение!">Отправить сообщение</button>
-            </div>
-        </form>
+      <h2>Напишите мне</h2>
+      <hr />
+      <!-- Contact form -->
+      <form>
+        <div>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            value=""
+            class="input-block-level"
+            placeholder="Ваше имя"
+          />
+        </div>
+        <div>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            value=""
+            class="input-block-level"
+            placeholder="Email"
+            required
+          />
+        </div>
+        <div>
+          <textarea
+            rows="11"
+            name="message"
+            id="message"
+            class="input-block-level"
+            placeholder="Текст сообщения"
+            required
+          ></textarea>
+        </div>
+        <div id="submit-form">
+          <button
+            name="submit"
+            id="submitButton"
+            class="btn btn-info pull-right"
+            onclick="return sendEmail('Спасибо. Ваше сообщение отправлено.');"
+            title="Кликните по кнопке чтобы Отправить ваше сообщение!"
+          >
+            Отправить сообщение
+          </button>
+        </div>
+      </form>
     </div>
 
     <!-- Footer -->
     <div id="footer">
-        <p id="copyright">
-            Copyright © 2017 Myhalchich Lyubov. All Rights Reserved.
-        </p>
+      <p id="copyright">
+        Copyright © 2017 Myhalchich Lyubov. All Rights Reserved.
+      </p>
 
-        <p id="social-icons">
-            <a
-                href="https://www.facebook.com/profile.php?id=100017189653101&fref=pb&hc_location=friends_tab&pnref=friends.all">
-                <img src="../../images/social-icons/facebook-icon.svg" class="social-icon facebook">
-                Facebook
-            </a>
-            <a href="https://www.pinterest.com/mihalchichlyubo">
-                <img src="../../images/social-icons/pinterest-icon.svg" class="social-icon pinterest">
-                Pinterest
-            </a>
-            <a href="https://www.instagram.com/liubovmikhalchich/?hl=ru">
-                <img src="../../images/social-icons/instagram-icon.svg" class="social-icon instagram">
-                Instagram
-            </a>
-            <a href="https://www.youtube.com/channel/UClvXYm8UeH2J1ek2ZQgGQBw">
-                <img src="../../images/social-icons/youtube-icon.svg" class="social-icon youtube">
-                YouTube
-            </a>
-        </p>
+      <p id="social-icons">
+        <a
+          href="https://www.facebook.com/profile.php?id=100017189653101&fref=pb&hc_location=friends_tab&pnref=friends.all"
+        >
+          <img
+            src="../../images/social-icons/facebook-icon.svg"
+            class="social-icon facebook"
+          />
+          Facebook
+        </a>
+        <a href="https://www.pinterest.com/mihalchichlyubo">
+          <img
+            src="../../images/social-icons/pinterest-icon.svg"
+            class="social-icon pinterest"
+          />
+          Pinterest
+        </a>
+        <a href="https://www.instagram.com/liubovmikhalchich/?hl=ru">
+          <img
+            src="../../images/social-icons/instagram-icon.svg"
+            class="social-icon instagram"
+          />
+          Instagram
+        </a>
+        <a href="https://www.youtube.com/channel/UClvXYm8UeH2J1ek2ZQgGQBw">
+          <img
+            src="../../images/social-icons/youtube-icon.svg"
+            class="social-icon youtube"
+          />
+          YouTube
+        </a>
+      </p>
     </div>
 
     <script src="../../scripts/script.js"></script>
     <script src="../../scripts/send.email.js"></script>
-</body>
-
+  </body>
 </html>

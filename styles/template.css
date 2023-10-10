@@ -1,13 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Podkova&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arizonia&family=Monsieur+La+Doulaise&display=swap");
 
 html,
 body {
   margin: 0;
   border-color: #736b5e;
-  color: #ded6ca;
-  font-size: 20px;
+  color: rgb(247, 233, 195);
+  font-size: 16px;
+  font-family: "Podkova", serif, cursive;
 }
 
 body {
@@ -28,108 +28,79 @@ body {
 }
 
 header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 10vh;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+
+  position: fixed;
+  top: 0;
+  padding: 0 20px;
+
+  width: 100%;
+  height: 10vh;
+  box-sizing: border-box;
+
   z-index: 9999;
   background-color: rgb(19, 21, 22);
-  color: #f0e387;
 }
 
-header > * {
-  display: inline-block;
-  position: absolute;
+img.icon {
+  width: 40px;
+  height: 40px;
 }
 
-div#change-language {
-  margin-left: 5%;
-  font: 14px Arial, Helvetica, sans-serif;
-  font-size: calc(min(1.6vw, 1.6vh));
-}
-
-div#change-language > p#title-change-language:hover {
+img.icon:hover {
   text-decoration: underline;
   cursor: pointer;
 }
 
-div#change-language > div#select-language {
+div.menu-container {
+  position: relative;
+}
+
+div.menu {
+  display: flex;
+  flex-direction: column;
+  visibility: hidden;
+
   position: absolute;
-  display: none;
-  width: 10vw;
+  border-radius: 5px;
+  overflow: hidden;
+
   box-shadow: 0 6px 12px rgb(0 0 0 / 18%);
   background-color: rgb(19, 21, 22);
   border: 1px solid rgba(0, 0, 0, 0.15);
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-  overflow: hidden;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
 }
 
-div#change-language > div#select-language > div.language {
-  padding-left: 15%;
-  padding-top: 3px;
-  padding-bottom: 3px;
+div.menu.left {
+  left: 0;
+}
+div.menu.right {
+  right: 0;
 }
 
-div#change-language > div#select-language > div.language:hover {
+div.menu > div.menu-item {
+  min-width: 100px;
+  padding: 10px 15px;
+}
+
+div.menu > div.menu-item:hover {
   background-color: rgb(47, 51, 53);
   cursor: pointer;
 }
 
 div#header-title {
-  font-family: "Podkova", serif, cursive;
   font-size: calc(min(4vw, 4vh));
-  left: 50%;
-  transform: translate(-50%);
-  -webkit-transform: translate(-50%);
-  -moz-transform: translate(-50%);
-  -ms-transform: translate(-50%);
-  -o-transform: translate(-50%);
-}
-
-div#explorer {
-  right: 0;
-  margin-right: 5%;
-  max-width: 30%;
-  text-align: left;
-  font: 14px Arial, Helvetica, sans-serif;
-  font-size: calc(min(1.6vw, 1.6vh));
-}
-
-div#explorer > div.explorer-elem {
-  display: inline-block;
-  padding-right: 5px;
-}
-
-div#explorer > div.explorer-elem:hover {
-  text-decoration: underline;
-  cursor: pointer;
-}
-
-@media screen and (max-width: 770px) {
-  div#explorer {
-    max-width: 26%;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  div#explorer {
-    position: absolute;
-    bottom: 15%;
-    width: 100%;
-    max-width: 100%;
-    margin-right: 0;
-  }
 }
 
 div#background-image {
-  width: 100%;
-  height: 90vh;
+  height: 100vh;
+  width: 100vw;
   /* z-index: -1; */
   position: fixed;
   background-image: url(../images/background.jpg);
@@ -139,19 +110,29 @@ div#background-image {
 }
 
 div#title {
-  display: inline-block;
   position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
-  font-family: "Noto Serif", serif;
+  width: 100%;
+  padding: 0 10%;
   font-size: 40px;
+  font-weight: 500;
   margin-top: 130px;
   text-align: center;
-  color: #f0e387;
+  word-wrap: break-word;
+  hyphens: auto;
+  box-sizing: border-box;
+  letter-spacing: -2px;
+}
+
+div#title-description {
+  position: relative;
+  width: 100%;
+  padding: 0 10%;
+  font-size: 16px;
+  margin-top: 15px;
+  text-align: center;
+  word-wrap: break-word;
+  hyphens: auto;
+  box-sizing: border-box;
 }
 
 div#footer {

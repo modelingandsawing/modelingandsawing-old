@@ -1,38 +1,67 @@
 <!DOCTYPE html>
 <html lang="de">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CV Liubov Mykhalchych</title>
-    <link rel="icon" href="./images/icon.png">
-    <link rel="stylesheet" href="./styles/template.css">
-    <link rel="stylesheet" href="./styles/main.css">
-</head>
+    <link rel="icon" href="./images/icon.png" />
+    <link rel="stylesheet" href="./styles/template.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
+  </head>
 
-<body>
+  <body>
     <!-- Header -->
     <header>
-        <div id="change-language">
-            <p id="title-change-language" onclick="showLanguageMenu()">SPRACHE</p>
-            <div id="select-language">
-                <!-- <div class="language" onclick="redirect('./other-languages/en/')">English</div> -->
-                <div class="language" onclick="redirect('./cv.html')">Deutsch</div>
-                <div class="language" onclick="redirect('./other-languages/ru/cv.html')">Русский</div>
-                <div class="language" onclick="redirect('./other-languages/uk/cv.html')">Українська</div>
-            </div>
+      <div id="language" class="menu-container">
+        <img
+          id="icon-change-language"
+          class="icon"
+          src="./images/language.svg"
+          onclick="showLanguageMenu()"
+        />
+        <div id="change-language" class="menu left">
+          <div class="menu-item" onclick="redirect('./cv.html')">Deutsch</div>
+          <div
+            class="menu-item"
+            onclick="redirect('./other-languages/ru/cv.html')"
+          >
+            Русский
+          </div>
+          <div
+            class="menu-item"
+            onclick="redirect('./other-languages/uk/cv.html')"
+          >
+            Українська
+          </div>
         </div>
-        <div id="header-title">
-            <p>Liubov Mykhalchych</p>
+      </div>
+      <div id="header-title">
+        <p>Liubov Mykhalchych</p>
+      </div>
+      <div id="navigation" class="menu-container">
+        <img
+          id="icon-navigation-menu"
+          class="icon"
+          src="./images/menu.svg"
+          onclick="showNavigationMenu()"
+        />
+        <div id="navigation-menu" class="menu right">
+          <div class="menu-item" onclick="redirect('./index.html')">Home</div>
+          <div class="menu-item" onclick="redirect('./wedding-dresses.html')">
+            Brautkleider
+          </div>
+          <div class="menu-item" onclick="redirect('./gallery.html')">
+            Maßschneiderei
+          </div>
+          <div class="menu-item" onclick="redirect('./reviews.html')">
+            Nähkurse
+          </div>
+          <div class="menu-item" onclick="redirect('./contact.html')">
+            Kontakte
+          </div>
         </div>
-        <div id="explorer">
-            <div class="explorer-elem" onclick="redirect('./index.html')">HOME</div>
-            <div class="explorer-elem" onclick="redirect('./wedding-dresses.html')">BRAUTKLEIDER</div>
-            <div class="explorer-elem" onclick="redirect('./gallery.html')">PORTFOLIO</div>
-            <div class="explorer-elem" onclick="redirect('./reviews.html')">NÄHKURSE</div>
-            <div class="explorer-elem" onclick="redirect('./contact.html')">KONTAKTE</div>
-        </div>
+      </div>
     </header>
 
     <!-- Background image -->
@@ -43,70 +72,99 @@
 
     <!-- Container -->
     <div id="container">
-        <p><strong><u>Bewerbung</u></strong></p>
-        <img src="images/cv.JPG">
-        <p>Name: Mykhalchych</p>
-        <p>Vorname: Liubov</p>
-        <p>Geburtsjahr: 1984</p>
-        <p>Geburtsland: Ukraine</p>
-        <p><a href="https://dict.leo.org/russisch-deutsch/Kontaktdaten">Kontaktdaten</a>:</p>
-        <p>E-Mail: mihalchich.lyubov@gmail.com</p>
-        <p>Mobil: 015123251511</p>
-        <p>Familienstand: verheiratet, zwei Kinder.</p>
-        <p>Sprachkenntnisse:</p>
-        <p>Ukrainisch, Russisch (fließend),</p>
-        <p>Deutsch, Englisch (Grundkenntnisse)</p>
-        <p>Berufsausbildung:</p>
-        <p>2002-2005 Technische Schule für Design in Lwiw (Lemberg), Ukraine</p>
-        <p>Bereich: Mode- und Technical Design</p>
-        <p>Spezialität: Modellierung und Gestaltung von Konsumgtern</p>
-        <p>Abschluss: Mode- und technische Designerin</p>
-        <p>Abschlussarbeit: Modedesign eines leichten Sommerkleides</p>
-        <p>Berufliche Werdegang:</p>
-        <p>2007-2008 Lehrerin einer jugendlichen Gruppe für Kleidungsdesign</p>
-        <p>2009-2019 Selbständige Tätigkeit, Inhaberin einer Maßchneiderei: Modedesign</p>
-        <p>2013-2019 Leiterin für Design-, Schnitt- und Nähkurse in Rachiw</p>
-        <p>Leistung:</p>
-        <p>2017 Autorin einer speziellen Methode zur Bildung einer Grundkonstruktion <br /> von Abendkleid und
-            Ärmel (die Urheberrechte wurden am 27.11.2017 <br /> unter Nr. 74965, Nr. 74966 in der Ukraine
-            registriert)</p>
-        <p>Leiterin des Ausbildungsprogramms an "Design-, Schnitt und Nähschule"</p>
-        <p>Schulbildung:</p>
-        <p>1991-2002 Oberschule in der Ukraine</p>
-        <p>Arbeitshaltung:</p>
-        <p>Pflichtbewusst, Verantwortungsvoll, Gewissenhaft, für neuen Aufgaben aufgeschlossen</p>
-        <p>Interesse: Immer auf der Suche nach neuen schöpferischen Ideen</p>
-        <p>Referenzen: gerne auf Anfrage</p>
+      <p>
+        <strong><u>Bewerbung</u></strong>
+      </p>
+      <img src="images/cv.JPG" />
+      <p>Name: Mykhalchych</p>
+      <p>Vorname: Liubov</p>
+      <p>Geburtsjahr: 1984</p>
+      <p>Geburtsland: Ukraine</p>
+      <p>
+        <a href="https://dict.leo.org/russisch-deutsch/Kontaktdaten"
+          >Kontaktdaten</a
+        >:
+      </p>
+      <p>E-Mail: mihalchich.lyubov@gmail.com</p>
+      <p>Mobil: 015123251511</p>
+      <p>Familienstand: verheiratet, zwei Kinder.</p>
+      <p>Sprachkenntnisse:</p>
+      <p>Ukrainisch, Russisch (fließend),</p>
+      <p>Deutsch, Englisch (Grundkenntnisse)</p>
+      <p>Berufsausbildung:</p>
+      <p>2002-2005 Technische Schule für Design in Lwiw (Lemberg), Ukraine</p>
+      <p>Bereich: Mode- und Technical Design</p>
+      <p>Spezialität: Modellierung und Gestaltung von Konsumgtern</p>
+      <p>Abschluss: Mode- und technische Designerin</p>
+      <p>Abschlussarbeit: Modedesign eines leichten Sommerkleides</p>
+      <p>Berufliche Werdegang:</p>
+      <p>2007-2008 Lehrerin einer jugendlichen Gruppe für Kleidungsdesign</p>
+      <p>
+        2009-2019 Selbständige Tätigkeit, Inhaberin einer Maßchneiderei:
+        Modedesign
+      </p>
+      <p>2013-2019 Leiterin für Design-, Schnitt- und Nähkurse in Rachiw</p>
+      <p>Leistung:</p>
+      <p>
+        2017 Autorin einer speziellen Methode zur Bildung einer
+        Grundkonstruktion <br />
+        von Abendkleid und Ärmel (die Urheberrechte wurden am 27.11.2017 <br />
+        unter Nr. 74965, Nr. 74966 in der Ukraine registriert)
+      </p>
+      <p>
+        Leiterin des Ausbildungsprogramms an "Design-, Schnitt und Nähschule"
+      </p>
+      <p>Schulbildung:</p>
+      <p>1991-2002 Oberschule in der Ukraine</p>
+      <p>Arbeitshaltung:</p>
+      <p>
+        Pflichtbewusst, Verantwortungsvoll, Gewissenhaft, für neuen Aufgaben
+        aufgeschlossen
+      </p>
+      <p>Interesse: Immer auf der Suche nach neuen schöpferischen Ideen</p>
+      <p>Referenzen: gerne auf Anfrage</p>
     </div>
 
     <!-- Footer -->
     <div id="footer">
-        <p id="copyright">
-            Copyright © 2017 Myhalchich Lyubov. All Rights Reserved.
-        </p>
+      <p id="copyright">
+        Copyright © 2017 Myhalchich Lyubov. All Rights Reserved.
+      </p>
 
-        <p id="social-icons">
-            <a
-                href="https://www.facebook.com/profile.php?id=100017189653101&fref=pb&hc_location=friends_tab&pnref=friends.all">
-                <img src="./images/social-icons/facebook-icon.svg" class="social-icon facebook">
-                Facebook
-            </a>
-            <a href="https://www.pinterest.com/mihalchichlyubo">
-                <img src="./images/social-icons/pinterest-icon.svg" class="social-icon pinterest">
-                Pinterest
-            </a>
-            <a href="https://www.instagram.com/liubovmikhalchich/?hl=ru">
-                <img src="./images/social-icons/instagram-icon.svg" class="social-icon instagram">
-                Instagram
-            </a>
-            <a href="https://www.youtube.com/channel/UClvXYm8UeH2J1ek2ZQgGQBw">
-                <img src="./images/social-icons/youtube-icon.svg" class="social-icon youtube">
-                YouTube
-            </a>
-        </p>
+      <p id="social-icons">
+        <a
+          href="https://www.facebook.com/profile.php?id=100017189653101&fref=pb&hc_location=friends_tab&pnref=friends.all"
+        >
+          <img
+            src="./images/social-icons/facebook-icon.svg"
+            class="social-icon facebook"
+          />
+          Facebook
+        </a>
+        <a href="https://www.pinterest.com/mihalchichlyubo">
+          <img
+            src="./images/social-icons/pinterest-icon.svg"
+            class="social-icon pinterest"
+          />
+          Pinterest
+        </a>
+        <a href="https://www.instagram.com/liubovmikhalchich/?hl=ru">
+          <img
+            src="./images/social-icons/instagram-icon.svg"
+            class="social-icon instagram"
+          />
+          Instagram
+        </a>
+        <a href="https://www.youtube.com/channel/UClvXYm8UeH2J1ek2ZQgGQBw">
+          <img
+            src="./images/social-icons/youtube-icon.svg"
+            class="social-icon youtube"
+          />
+          YouTube
+        </a>
+      </p>
     </div>
 
     <script src="./scripts/script.js"></script>
-</body>
-
+  </body>
 </html>
