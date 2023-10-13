@@ -1,7 +1,7 @@
 div#title {
   font-family: "Arizonia", cursive;
   font-family: "Monsieur La Doulaise", cursive;
-  font-size: 80px;
+  font-size: min(100px, 20vw);
 }
 
 div#container {
