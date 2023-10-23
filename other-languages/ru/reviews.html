@@ -14,23 +14,21 @@
   <body>
     <!-- Header -->
     <header>
-      <div id="change-language">
-        <p id="icon-change-language" onclick="showLanguageMenu()">ЯЗЫК</p>
-        <div id="select-language">
-          <!-- <div class="language" onclick="redirect('../../other-languages/en/')">English</div> -->
-          <div class="language" onclick="redirect('../../reviews.html')">
+      <div id="language" class="menu-container">
+        <img
+          id="icon-change-language"
+          class="icon"
+          src="../../images/language.svg"
+          onclick="showLanguageMenu()"
+        />
+        <div id="change-language" class="menu left">
+          <div class="menu-item" onclick="redirect('../../index.html')">
             Deutsch
           </div>
-          <div
-            class="language"
-            onclick="redirect('../../other-languages/ru/reviews.html')"
-          >
+          <div class="menu-item" onclick="redirect('./index.html')">
             Русский
           </div>
-          <div
-            class="language"
-            onclick="redirect('../../other-languages/uk/reviews.html')"
-          >
+          <div class="menu-item" onclick="redirect('../uk/index.html')">
             Українська
           </div>
         </div>
@@ -38,21 +36,30 @@
       <div id="header-title">
         <p>Михалчич Любовь</p>
       </div>
-      <div id="explorer">
-        <div class="explorer-elem" onclick="redirect('./index.html')">
-          ГЛАВНАЯ
-        </div>
-        <div class="explorer-elem" onclick="redirect('./wedding-dresses.html')">
-          СВАДЕБНЫЕ ПЛАТЬЯ
-        </div>
-        <div class="explorer-elem" onclick="redirect('./gallery.html')">
-          ФОТОГАЛЕРЕЯ
-        </div>
-        <div class="explorer-elem" onclick="redirect('./reviews.html')">
-          КУРСЫ КРОЙКИ И ШИТЬЯ
-        </div>
-        <div class="explorer-elem" onclick="redirect('./contact.html')">
-          КОНТАКТЫ
+      <div id="navigation" class="menu-container">
+        <img
+          id="icon-navigation-menu"
+          class="icon"
+          src="../../images/menu.svg"
+          onclick="showNavigationMenu()"
+        />
+        <div id="navigation-menu" class="menu right">
+          <div class="menu-item" onclick="redirect('./index.html')">
+            Домашняя
+          </div>
+          <div class="menu-item" onclick="redirect('./wedding-dresses.html')">
+            Свадебные платья
+          </div>
+          <div class="menu-item" onclick="redirect('./gallery.html')">
+            Пошив на заказ
+          </div>
+          <div class="menu-item" onclick="redirect('./reviews.html')">
+            Курсы кройки и шитья
+          </div>
+          <div class="menu-item" onclick="redirect('./contact.html')">
+            Контакты
+          </div>
+          <div class="menu-item" onclick="redirect('./prices.html')">Цены</div>
         </div>
       </div>
     </header>
