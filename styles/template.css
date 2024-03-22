@@ -14,19 +14,6 @@ body {
   padding-top: 10vh;
 }
 
-::-webkit-scrollbar {
-  background-color: rgb(26, 28, 29);
-  color: rgb(173, 166, 156);
-}
-
-::-webkit-scrollbar-corner {
-  background-color: rgb(19, 21, 22);
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: rgb(55, 60, 62);
-}
-
 header {
   display: flex;
   align-items: center;
