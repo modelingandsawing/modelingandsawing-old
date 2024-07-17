@@ -9,7 +9,7 @@ div#container {
   margin-top: 130px;
   margin-bottom: 100px;
   padding-bottom: 50px;
-  position: relative;
+
   left: 50%;
   transform: translateX(-50%);
   -webkit-transform: translateX(-50%);

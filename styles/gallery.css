@@ -1,18 +1,18 @@
 div#container {
-    width: calc(220px + (1100 - 220) * ((100vw - 320px) / (1440 - 320)));
-    margin-top: 70px;
-    margin-bottom: 100px;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
+  width: calc(220px + (1100 - 220) * ((100vw - 320px) / (1440 - 320)));
+  margin-top: 70px;
+  margin-bottom: 100px;
+
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
 }
 
 div#container > img {
-    max-width: 100%;
-    height: auto;
-    width: auto;
+  max-width: 100%;
+  height: auto;
+  width: auto;
 }
