@@ -8,6 +8,12 @@ div#title {
   width: max-content;
 }
 
+p#subtitle {
+  margin-top: 0;
+  transform: translateY(-10px);
+  text-align: center;
+}
+
 div#main-container {
   margin-top: 130px;
   margin-bottom: 100px;
@@ -21,6 +27,8 @@ img.portrait {
   border-radius: 50%;
   border: 5px solid white;
 
+  aspect-ratio: 1/1;
+  object-fit: cover;
   width: min(90%, 400px);
   height: min(90%, 400px);
   display: block;
@@ -62,10 +70,12 @@ div.services {
 a.service {
   width: min-content;
   display: block;
-  text-decoration: none;
-  color: inherit;
+  /* text-decoration: none; */
   padding: 10px 15px;
   border-radius: 25px;
+
+  /* background-color: var(--primary-color); */
+  /* color: var(--background-color); */
 
   transition-duration: 0.2s;
   transition-timing-function: ease-out;
@@ -80,11 +90,12 @@ a.service > img.service-icon {
   width: 130px;
   height: 130px;
   border-radius: 50%;
-  border: 5px solid var(--primary-color);
+  border: 5px solid white;
 }
 
 a.service > h4 {
   margin-bottom: 0;
+  vertical-align: center;
 }
 
 div.split {
@@ -154,6 +165,18 @@ div.uniqueness-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+img.uniqueness-image {
+  border-radius: 20px;
+  border: 5px solid white;
+
+  width: min(90%, 400px);
+  height: min(90%, 400px);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1;
 }
 
 div.qualitative-secondary {
@@ -262,7 +285,7 @@ div.services-detailed-container {
 details.service-detailed {
   min-width: 100%;
 }
-
+/* 
 div.who-am-i-container {
 }
 
@@ -309,7 +332,7 @@ div.my-story-text-container {
   align-items: end;
   justify-content: center;
   text-align: right;
-}
+} */
 
 div.map-container {
   display: flex;

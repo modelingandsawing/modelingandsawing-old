@@ -27,9 +27,10 @@
 }
 
 :root {
-  --primary-color: rgb(247, 233, 195);
+  --primary-color: blanchedalmond;
   --background-color: rgb(19, 21, 22);
   accent-color: var(--primary-color);
+  line-height: 1.5;
 }
 
 * {
@@ -66,12 +67,13 @@ h2,
 h3,
 h4 {
   font-weight: 600;
+  text-align: center;
 }
 
 p,
 span,
 h1,
-h2,
+link-arrow h2,
 h3,
 h4 {
   max-width: 700px;
@@ -113,7 +115,7 @@ header {
 }
 
 a {
-  color: cadetblue;
+  color: var(--primary-color);
 }
 
 input:not([type="checkbox"]),
@@ -280,4 +282,27 @@ img.social-icon {
   display: inline-block;
   width: 12px;
   margin-right: 3px;
+}
+
+summary {
+  /* display: flex; */
+  justify-content: space-between;
+}
+/* 
+summary::after {
+  content: "";
+  width: 18px;
+  height: 10px;
+  background: url("../images/chevron-arrow.svg");
+  background-size: cover;
+  margin-left: 0.75em;
+  transition: 0.2s;
+} */
+/* 
+details[open] > summary::after {
+  transform: rotate(180deg);
+} */
+
+span.link-arrow {
+  font-weight: bold;
 }

@@ -1,7 +1,7 @@
 div#container {
   width: calc(220px + (1100 - 220) * ((100vw - 320px) / (1440 - 320)));
   margin-top: 70px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 
   left: 50%;
   transform: translateX(-50%);
