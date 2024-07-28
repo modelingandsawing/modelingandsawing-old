@@ -1,17 +1,101 @@
-@import url("https://fonts.googleapis.com/css2?family=Podkova&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Arizonia&family=Monsieur+La+Doulaise&display=swap");
+@font-face {
+  font-family: "Gabriela";
+  src: url("/fonts/Gabriela-Regular.woff2") format("woff2"),
+    url("/fonts/Gabriela-Regular.woff") format("woff"),
+    url("/fonts/Gabriela-Regular.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Arizonia";
+  src: url("/fonts/Arizonia-Regular.woff2") format("woff2"),
+    url("/fonts/Arizonia-Regular.woff") format("woff"),
+    url("/fonts/Arizonia-Regular.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Monsieur La Doulaise";
+  src: url("/fonts/MonsieurLaDoulaise-Regular.woff2") format("woff2"),
+    url("/fonts/MonsieurLaDoulaise-Regular.woff") format("woff"),
+    url("/fonts/MonsieurLaDoulaise-Regular.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --primary-color: blanchedalmond;
+  --background-color: rgb(19, 21, 22);
+  accent-color: var(--primary-color);
+  line-height: 1.5;
+}
+
+* {
+  position: relative;
+  box-sizing: border-box;
+}
 
 html,
 body {
   margin: 0;
-  border-color: #736b5e;
-  color: rgb(247, 233, 195);
-  font-size: 16px;
-  font-family: "Podkova", serif, cursive;
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+  font-family: "Gabriela", serif, cursive;
+  scroll-behavior: smooth;
+  scroll-padding: 120px 0 0 0;
 }
 
 body {
   padding-top: 10vh;
+}
+
+html,
+body,
+div,
+p,
+a,
+span,
+button {
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 600;
+  text-align: center;
+}
+
+p,
+span,
+h1,
+link-arrow h2,
+h3,
+h4 {
+  max-width: 700px;
+}
+
+button {
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  border: none;
+  padding: 15px 30px;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+hr {
+  border-top: none;
+}
+
+.center-text {
+  text-align: center;
 }
 
 header {
@@ -25,10 +109,56 @@ header {
 
   width: 100%;
   height: 10vh;
-  box-sizing: border-box;
 
   z-index: 9999;
-  background-color: rgb(19, 21, 22);
+  background-color: var(--background-color);
+}
+
+a {
+  color: var(--primary-color);
+}
+
+input:not([type="checkbox"]),
+textarea {
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #eee;
+  color: var(--background-color);
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: black;
+}
+
+textarea {
+  resize: none;
+}
+
+div.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: min(1400px, 100%);
+}
+
+div.primary-background {
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  width: 100%;
+}
+
+div.padding-horizontal {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+div.padding-vertical {
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 img.icon {
@@ -41,10 +171,6 @@ img.icon:hover {
   cursor: pointer;
 }
 
-div.menu-container {
-  position: relative;
-}
-
 div.menu {
   display: flex;
   flex-direction: column;
@@ -55,7 +181,7 @@ div.menu {
   overflow: hidden;
 
   box-shadow: 0 6px 12px rgb(0 0 0 / 18%);
-  background-color: rgb(19, 21, 22);
+  background-color: var(--background-color);
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 7px;
   -webkit-border-radius: 7px;
@@ -81,8 +207,8 @@ div.menu > div.menu-item:hover {
   cursor: pointer;
 }
 
-div#header-title {
-  font-size: calc(min(4vw, 4vh));
+div#header-title > p {
+  font-size: 22px;
 }
 
 div#background-image {
@@ -97,7 +223,6 @@ div#background-image {
 }
 
 div#title {
-  position: relative;
   width: 100%;
   padding: 0 10%;
   font-size: 40px;
@@ -106,12 +231,11 @@ div#title {
   text-align: center;
   word-wrap: break-word;
   hyphens: auto;
-  box-sizing: border-box;
+
   letter-spacing: -2px;
 }
 
 div#title-description {
-  position: relative;
   width: 100%;
   padding: 0 10%;
   font-size: 16px;
@@ -119,39 +243,66 @@ div#title-description {
   text-align: center;
   word-wrap: break-word;
   hyphens: auto;
-  box-sizing: border-box;
 }
 
 div#footer {
   width: calc(100% - 50px);
-  height: 100px;
-  position: relative;
+
   bottom: 0;
   font-family: "Open Sans", sans-serif;
   background-color: transparent;
   color: rgb(206, 202, 195);
-  padding-top: 32px;
-  padding-left: 50px;
+  padding: 32px 50px;
   line-height: 22px;
   font-size: 12px;
   font-weight: bold;
 }
 
-p#copyright {
-  font-size: smaller;
+p#copyright,
+P#copyright * {
+  font-size: small;
   letter-spacing: 1px;
+}
+
+p#social-icons {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 p#social-icons > a {
   text-decoration: none;
   color: rgb(79, 227, 128);
-  margin-right: 20px;
   display: inline-flex;
   align-items: center;
+  font-size: 16px;
 }
 
 img.social-icon {
   display: inline-block;
   width: 12px;
   margin-right: 3px;
+}
+
+summary {
+  /* display: flex; */
+  justify-content: space-between;
+}
+/* 
+summary::after {
+  content: "";
+  width: 18px;
+  height: 10px;
+  background: url("../images/chevron-arrow.svg");
+  background-size: cover;
+  margin-left: 0.75em;
+  transition: 0.2s;
+} */
+/* 
+details[open] > summary::after {
+  transform: rotate(180deg);
+} */
+
+span.link-arrow {
+  font-weight: bold;
 }

@@ -1,0 +1,45 @@
+div#title {
+  font-family: "Arizonia", cursive;
+  font-family: "Monsieur La Doulaise", cursive;
+  font-size: min(100px, 20vw);
+}
+
+div#container {
+  width: min(700px, 90dvw);
+  margin-top: 30px;
+  margin-bottom: 50px;
+  padding-bottom: 50px;
+
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+
+div#container > h1,
+div#container > h2 {
+  font-weight: 600;
+  text-align: center;
+}
+
+div#container > img {
+  border-radius: 50%;
+  border: 5px solid white;
+
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  width: min(90%, 400px);
+  height: min(90%, 400px);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  z-index: 1;
+}
+
+/* Temp? */
+.white {
+  color: white;
+}

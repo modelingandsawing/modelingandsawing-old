@@ -11,7 +11,7 @@ div#container {
   padding-bottom: 50px;
   background-color: rgba(19, 21, 22, 0.9);
   border-radius: 20px;
-  position: relative;
+
   left: 50%;
   transform: translateX(-50%);
   -webkit-transform: translateX(-50%);
@@ -41,7 +41,7 @@ div#container-2 {
   margin-bottom: 100px;
   width: calc(200px + (1000 - 200) * ((100vw - 320px) / (1440 - 320)));
   text-align: center;
-  position: relative;
+
   left: 50%;
   transform: translateX(-50%);
   -webkit-transform: translateX(-50%);
@@ -130,7 +130,6 @@ div#slideshow.active > div.controls {
 }
 
 div#slideshow.active > div.controls > div {
-  position: relative;
   top: 50%;
   transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
@@ -152,12 +151,10 @@ div#slideshow.active > div.controls > div:hover {
 }
 
 div#slideshow.active > div.controls > div#next {
-  position: relative;
   left: calc(100% - var(--slideshow-horizontal-padding) * 2);
 }
 
 div#slideshow.active > div.controls > div > i {
-  position: relative;
   top: 50%;
   left: 50%;
 }
@@ -224,7 +221,7 @@ div#slideshow.active > div#close-slideshow > i.close {
   );
   width: var(--close-button-container-size);
   height: var(--close-button-container-size);
-  position: relative;
+
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
