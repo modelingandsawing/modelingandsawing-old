@@ -118,7 +118,7 @@ header > #header-title-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
+  gap: 7px;
 }
 
 header > #header-title-container > #header-title > p {
