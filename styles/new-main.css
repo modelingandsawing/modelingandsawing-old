@@ -158,7 +158,7 @@ span.review-author::before {
 
 div.clothing-to-order-image > img {
   width: calc(100% - 50px);
-  margin-bottom: -55px;
+  margin-bottom: -30px;
 }
 
 div.uniqueness-container {
@@ -414,6 +414,11 @@ div.review-button-container {
   }
 
   div.clothing-to-order {
-    text-align: center;
+    /* text-align: center; */
+  }
+
+  div.clothing-to-order > div.clothing-to-order-image {
+    display: flex;
+    justify-content: center;
   }
 }
