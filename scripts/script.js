@@ -1,8 +1,3 @@
-// Redirect to another page
-function redirect(url) {
-  window.location.href = url;
-}
-
 // Show the language selection menu
 function showLanguageMenu() {
   const target = document.querySelector("div#change-language");

@@ -219,12 +219,13 @@ div.menu.right {
   right: 0;
 }
 
-div.menu > div.menu-item {
+div.menu > .menu-item {
   min-width: 100px;
   padding: 10px 15px;
+  text-decoration: none;
 }
 
-div.menu > div.menu-item:hover {
+div.menu > .menu-item:hover {
   background-color: rgb(47, 51, 53);
   cursor: pointer;
 }
