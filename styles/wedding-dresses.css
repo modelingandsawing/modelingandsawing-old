@@ -1,9 +1,7 @@
 div#container {
-  width: min(80vw, 700px);
+  width: calc(220px + (1100 - 220) * ((100vw - 320px) / (1440 - 320)));
   margin-top: 70px;
   margin-bottom: 50px;
-  display: flex;
-  flex-direction: column;
 
   left: 50%;
   transform: translateX(-50%);
@@ -13,8 +11,26 @@ div#container {
   -o-transform: translateX(-50%);
 }
 
-div#container > img {
-  max-width: 100%;
-  min-height: 400px;
+div#container > div.group-content {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+div#container > div.group-content::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+div#container > div.group-content > div.gallery-image-container {
+  float: left;
+  top: 0;
+  left: 0;
+}
+
+div#container > div.group-content > div.gallery-image-container > img.gallery-image {
+  display: block;
+  width: 100%;
   height: auto;
 }

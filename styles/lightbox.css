@@ -78,6 +78,42 @@
   white-space: nowrap;
 }
 
+/* ── Skeleton placeholder ────────────────────────────────────────────────── */
+
+.lb-skeleton {
+  display: none;
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.lb-skeleton::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.06) 50%,
+    transparent 100%
+  );
+  background-size: 200% 100%;
+  animation: lb-shimmer 1.4s ease-in-out infinite;
+}
+
+#lightbox.lb-loading .lb-skeleton {
+  display: block;
+}
+
+#lightbox.lb-loading .lb-img {
+  display: none;
+}
+
+@keyframes lb-shimmer {
+  0%   { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
 /* ── Clickable gallery images ────────────────────────────────────────────── */
 
 .lb-trigger {

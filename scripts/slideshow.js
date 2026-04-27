@@ -37,8 +37,9 @@ class Lightbox {
     el.className = "inactive";
     el.innerHTML =
       '<button class="lb-close" aria-label="Schließen">&#x2715;</button>' +
-      '<button class="lb-prev"  aria-label="Zurück">&#x2039;</button>' +
       '<img class="lb-img" src="" alt="">' +
+      '<div class="lb-skeleton"></div>' +
+      '<button class="lb-prev"  aria-label="Zurück">&#x2039;</button>' +
       '<button class="lb-next"  aria-label="Weiter">&#x203A;</button>' +
       '<span class="lb-counter"></span>';
 
@@ -91,7 +92,11 @@ class Lightbox {
 
   _update() {
     var img = this._images[this._index];
+    var self = this;
+    this._overlay.classList.add("lb-loading");
+    this._img.onload = function() { self._overlay.classList.remove("lb-loading"); };
     this._img.src = img.full;
+    if (this._img.complete) this._overlay.classList.remove("lb-loading");
     this._img.alt = img.alt || "";
     var multi = this._images.length > 1;
     this._counter.textContent = multi ? (this._index + 1) + " / " + this._images.length : "";

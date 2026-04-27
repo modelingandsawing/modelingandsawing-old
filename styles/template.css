@@ -30,6 +30,7 @@
   --primary-color: blanchedalmond;
   --background-color: rgb(19, 21, 22);
   accent-color: var(--primary-color);
+  color-scheme: dark;
   line-height: 1.5;
 }
 

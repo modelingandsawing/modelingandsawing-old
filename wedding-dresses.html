@@ -8,6 +8,7 @@
     <link rel="icon" href="./images/icon.png" />
     <link rel="stylesheet" href="./styles/template.css" />
     <link rel="stylesheet" href="./styles/wedding-dresses.css" />
+    <link rel="stylesheet" href="./styles/lightbox.css" />
     <meta
       name="description"
       content="Brautmode, Brautmode Jena, Festmode Jena, Festmode bei Jena, neben Jena, näher Jena, Brautmoden, Brautkleider und Hochzeitskleider in Jena, näher Jena"
@@ -84,18 +85,28 @@
         .then(function(r) { return r.json(); })
         .then(function(images) {
           var container = document.getElementById("container");
-          var fragment = document.createDocumentFragment();
-          images.forEach(function(img) {
+          var contentEl = document.createElement("div");
+          contentEl.className = "group-content";
+          images.forEach(function(img, imgIndex) {
+            var containerEl = document.createElement("div");
+            containerEl.className = "gallery-image-container lb-trigger";
             var el = document.createElement("img");
-            el.src = img.full;
-            el.srcset = img.thumb + " 188w, " + img.medium + " 453w, " + img.full + " 1920w";
-            el.sizes = "(max-width: 875px) 80vw, 700px";
+            el.src = img.medium;
+            el.srcset = img.thumb + " 160w, " + img.medium + " 500w, " + img.full + " 1920w";
+            el.sizes = "(max-width: 600px) 100vw, (max-width: 900px) 50vw, 33vw";
             el.className = "gallery-image";
             el.loading = "lazy";
-            el.alt = "wedding dress";
-            fragment.appendChild(el);
+            el.alt = "Brautkleid";
+            el.width = 300;
+            el.height = 400;
+            containerEl.appendChild(el);
+            containerEl.addEventListener("click", function() {
+              lightbox.open(images, imgIndex);
+            });
+            contentEl.appendChild(containerEl);
           });
-          container.appendChild(fragment);
+          container.appendChild(contentEl);
+          fjGallery(contentEl, { itemSelector: "div.gallery-image-container" });
         });
     </script>
 
@@ -144,5 +155,7 @@
 
 
     <script src="./scripts/script.js"></script>
+    <script src="./scripts/libraries/fj-grid/fj-grid.js"></script>
+    <script src="./scripts/slideshow.js"></script>
   </body>
 </html>

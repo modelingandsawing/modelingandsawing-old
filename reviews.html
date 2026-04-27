@@ -8,7 +8,7 @@
     <link rel="icon" href="./images/icon.png" />
     <link rel="stylesheet" href="./styles/template.css" />
     <link rel="stylesheet" href="./styles/reviews.css" />
-    <link rel="stylesheet" href="./styles/items.css" />
+    <link rel="stylesheet" href="./styles/lightbox.css" />
   </head>
 
   <body>
@@ -74,7 +74,7 @@
     <div id="title">Bewertungen</div>
 
     <!-- Container -->
-    <div id="container" class="no-reviews">
+    <div id="container">
       <p id="container-title">
         Auf den Fotos sehen Sie die Schüler in den Kleidern, die sie während des
         Schneid- und Nähkurses genäht haben.
@@ -86,20 +86,27 @@
         .then(function(r) { return r.json(); })
         .then(function(images) {
           var container = document.getElementById("container");
-          var fragment = document.createDocumentFragment();
-          images.forEach(function(img) {
-            var reviewEl = document.createElement("div");
-            reviewEl.className = "review";
+          var contentEl = document.createElement("div");
+          contentEl.className = "group-content";
+          images.forEach(function(img, imgIndex) {
+            var containerEl = document.createElement("div");
+            containerEl.className = "gallery-image-container lb-trigger";
             var el = document.createElement("img");
             el.src = img.medium;
             el.srcset = img.thumb + " 160w, " + img.medium + " 500w, " + img.full + " 1920w";
             el.sizes = "(max-width: 600px) 100vw, (max-width: 900px) 50vw, 33vw";
-            el.className = "img-review";
+            el.className = "gallery-image";
             el.loading = "lazy";
-            reviewEl.appendChild(el);
-            fragment.appendChild(reviewEl);
+            el.width = 300;
+            el.height = 400;
+            containerEl.appendChild(el);
+            containerEl.addEventListener("click", function() {
+              lightbox.open(images, imgIndex);
+            });
+            contentEl.appendChild(containerEl);
           });
-          container.appendChild(fragment);
+          container.appendChild(contentEl);
+          fjGallery(contentEl, { itemSelector: "div.gallery-image-container" });
         });
     </script>
 
@@ -148,5 +155,7 @@
 
 
     <script src="./scripts/script.js"></script>
+    <script src="./scripts/libraries/fj-grid/fj-grid.js"></script>
+    <script src="./scripts/slideshow.js"></script>
   </body>
 </html>
