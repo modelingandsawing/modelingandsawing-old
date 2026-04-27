@@ -1,7 +1,9 @@
 div#container {
-  width: calc(220px + (1100 - 220) * ((100vw - 320px) / (1440 - 320)));
+  width: min(80vw, 700px);
   margin-top: 70px;
   margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
 
   left: 50%;
   transform: translateX(-50%);

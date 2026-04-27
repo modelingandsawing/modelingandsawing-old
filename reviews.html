@@ -78,115 +78,29 @@
         Auf den Fotos sehen Sie die Schüler in den Kleidern, die sie während des
         Schneid- und Nähkurses genäht haben.
       </p>
-      <div class="review">
-        <img class="img-review" src="./images/reviews/Marina.jpg" />
-      </div>
-      <div class="review">
-        <img class="img-review" src="./images/reviews/Libya.jpg" />
-      </div>
-      <div class="review">
-        <img class="img-review" src="./images/reviews/Natalia.jpg" />
-      </div>
-      <div class="review">
-        <img class="img-review" src="./images/reviews/Galina.jpg" />
-      </div>
-      <div class="review">
-        <img class="img-review" src="./images/reviews/Luda.jpg" />
-      </div>
-      <div class="review">
-        <img class="img-review" src="./images/reviews/gallery/1.jpg" />
-      </div>
-      <div class="review">
-        <img class="img-review" src="./images/reviews/gallery/2.jpg" />
-      </div>
-      <div class="review">
-        <img class="img-review" src="./images/reviews/gallery/3.jpg" />
-      </div>
-      <div class="review">
-        <img class="img-review" src="./images/reviews/gallery/4.jpg" />
-      </div>
-      <div class="review">
-        <img class="img-review" src="./images/reviews/gallery/5.jpg" />
-      </div>
-      <div class="review">
-        <img class="img-review" src="./images/reviews/gallery/6.jpg" />
-      </div>
-      <div class="review">
-        <img class="img-review" src="./images/reviews/gallery/7.jpg" />
-      </div>
-      <div class="review">
-        <img class="img-review" src="./images/reviews/gallery/8.jpg" />
-      </div>
-      <div class="review">
-        <img class="img-review" src="./images/reviews/gallery/9.jpg" />
-      </div>
-      <div class="review">
-        <img class="img-review" src="./images/reviews/gallery/10.jpg" />
-      </div>
-      <div class="review">
-        <img class="img-review" src="./images/reviews/gallery/11.jpg" />
-      </div>
-      <div class="review">
-        <img class="img-review" src="./images/reviews/gallery/12.jpg" />
-      </div>
-      <div class="review">
-        <img class="img-review" src="./images/reviews/gallery/13.jpg" />
-      </div>
-      <div class="review">
-        <img class="img-review" src="./images/reviews/gallery/14.jpg" />
-      </div>
-      <div class="review">
-        <img class="img-review" src="./images/reviews/gallery/15.jpg" />
-      </div>
-      <div class="review">
-        <img class="img-review" src="./images/reviews/gallery/16.jpg" />
-      </div>
-      <div class="review">
-        <img class="img-review" src="./images/reviews/gallery/17.jpg" />
-      </div>
-      <div class="review">
-        <img class="img-review" src="./images/reviews/gallery/18.jpg" />
-      </div>
-      <div class="review">
-        <img class="img-review" src="./images/reviews/gallery/19.jpg" />
-      </div>
-      <div class="review">
-        <img class="img-review" src="./images/reviews/gallery/20.jpg" />
-      </div>
-      <div class="review">
-        <img class="img-review" src="./images/reviews/gallery/21.jpg" />
-      </div>
-      <div class="review">
-        <img class="img-review" src="./images/reviews/gallery/22.jpg" />
-      </div>
-      <div class="review">
-        <img class="img-review" src="./images/reviews/gallery/23.jpg" />
-      </div>
-      <div class="review">
-        <img class="img-review" src="./images/reviews/gallery/24.jpg" />
-      </div>
-      <div class="review">
-        <img class="img-review" src="./images/reviews/gallery/25.jpg" />
-      </div>
-      <div class="review">
-        <img class="img-review" src="./images/reviews/gallery/26.jpg" />
-      </div>
-      <div class="review">
-        <img class="img-review" src="./images/reviews/gallery/27.jpg" />
-      </div>
-      <div class="review">
-        <img class="img-review" src="./images/reviews/gallery/28.jpg" />
-      </div>
-      <div class="review">
-        <img class="img-review" src="./images/reviews/gallery/29.jpg" />
-      </div>
-      <div class="review">
-        <img class="img-review" src="./images/reviews/gallery/30.jpg" />
-      </div>
-      <div class="review">
-        <img class="img-review" src="./images/reviews/gallery/31.jpg" />
-      </div>
     </div>
+
+    <script>
+      fetch("./data/reviews-images.json")
+        .then(function(r) { return r.json(); })
+        .then(function(images) {
+          var container = document.getElementById("container");
+          var fragment = document.createDocumentFragment();
+          images.forEach(function(img) {
+            var reviewEl = document.createElement("div");
+            reviewEl.className = "review";
+            var el = document.createElement("img");
+            el.src = img.medium;
+            el.srcset = img.thumb + " 160w, " + img.medium + " 500w, " + img.full + " 1920w";
+            el.sizes = "(max-width: 600px) 100vw, (max-width: 900px) 50vw, 33vw";
+            el.className = "img-review";
+            el.loading = "lazy";
+            reviewEl.appendChild(el);
+            fragment.appendChild(reviewEl);
+          });
+          container.appendChild(fragment);
+        });
+    </script>
 
     <!-- Footer -->
     <div id="footer">

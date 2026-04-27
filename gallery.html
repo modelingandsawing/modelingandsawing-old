@@ -72,33 +72,26 @@
     <div id="title">Maßschneiderei</div>
 
     <!-- Container -->
-    <div id="container">
-      <img src="./images/gallery/1.jpg" class="gallery-image" loading="lazy" />
-      <img src="./images/gallery/2.jpg" class="gallery-image" loading="lazy" />
-      <img src="./images/gallery/3.jpg" class="gallery-image" loading="lazy" />
-      <img src="./images/gallery/21.jpg" class="gallery-image" loading="lazy" />
-      <img src="./images/gallery/22.jpg" class="gallery-image" loading="lazy" />
-      <img src="./images/gallery/23.jpg" class="gallery-image" loading="lazy" />
-      <img src="./images/gallery/24.jpg" class="gallery-image" loading="lazy" />
-      <img src="./images/gallery/20.jpg" class="gallery-image" loading="lazy" />
-      <img src="./images/gallery/25.jpg" class="gallery-image" loading="lazy" />
-      <img src="./images/gallery/7.jpg" class="gallery-image" loading="lazy" />
-      <img src="./images/gallery/8.jpg" class="gallery-image" loading="lazy" />
-      <img src="./images/gallery/5.jpg" class="gallery-image" loading="lazy" />
-      <img src="./images/gallery/10.jpg" class="gallery-image" loading="lazy" />
-      <img src="./images/gallery/11.jpg" class="gallery-image" loading="lazy" />
-      <img src="./images/gallery/12.jpg" class="gallery-image" loading="lazy" />
-      <img src="./images/gallery/13.jpg" class="gallery-image" loading="lazy" />
-      <img src="./images/gallery/14.jpg" class="gallery-image" loading="lazy" />
-      <img src="./images/gallery/9.jpg" class="gallery-image" loading="lazy" />
-      <img src="./images/gallery/15.jpg" class="gallery-image" loading="lazy" />
-      <img src="./images/gallery/16.jpg" class="gallery-image" loading="lazy" />
-      <img src="./images/gallery/17.jpg" class="gallery-image" loading="lazy" />
-      <img src="./images/gallery/18.jpg" class="gallery-image" loading="lazy" />
-      <img src="./images/gallery/19.jpg" class="gallery-image" loading="lazy" />
-      <img src="./images/gallery/6.jpg" class="gallery-image" loading="lazy" />
-      <img src="./images/gallery/4.jpg" class="gallery-image" loading="lazy" />
-    </div>
+    <div id="container"></div>
+
+    <script>
+      fetch("./data/gallery-images.json")
+        .then(function(r) { return r.json(); })
+        .then(function(images) {
+          var container = document.getElementById("container");
+          var fragment = document.createDocumentFragment();
+          images.forEach(function(img) {
+            var el = document.createElement("img");
+            el.src = img.medium;
+            el.srcset = img.thumb + " 160w, " + img.medium + " 500w, " + img.full + " 1920w";
+            el.sizes = "(max-width: 600px) 100vw, (max-width: 900px) 50vw, 33vw";
+            el.className = "gallery-image";
+            el.loading = "lazy";
+            fragment.appendChild(el);
+          });
+          container.appendChild(fragment);
+        });
+    </script>
 
     <!-- Footer -->
     <div id="footer">
