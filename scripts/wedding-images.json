@@ -8,7 +8,7 @@
         "https://i.ibb.co/WHRxZRV/1.jpg",
         "https://i.ibb.co/cysg0sY/1.jpg"
       ],
-      "sizes": "(max-width: 320px) 220px, (max-width: 1440px) calc(220px + (880 * ((100vw - 320px) / 1120))), 1100px"
+      "sizes": "(max-width: 875px) 80vw, 700px"
     },
     {
       "set": [
