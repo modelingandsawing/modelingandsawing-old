@@ -87,7 +87,6 @@ div#slideshow.active {
   width: calc(100% - var(--slideshow-horizontal-padding) * 2);
   height: 100%;
   background-color: rgba(0, 0, 0, 0.815);
-  z-index: 99999;
   padding-left: var(--slideshow-horizontal-padding);
   padding-right: var(--slideshow-horizontal-padding);
   animation: emergence 1s ease;
@@ -105,7 +104,6 @@ div#slideshow.active > div.slideshow-elems {
   -moz-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
-  z-index: 10;
 }
 
 div#slideshow.active img.slideshow-elem.active {

@@ -8,6 +8,7 @@
     <link rel="icon" href="./images/icon.png" />
     <link rel="stylesheet" href="./styles/template.css" />
     <link rel="stylesheet" href="./styles/news.css" />
+    <link rel="stylesheet" href="./styles/lightbox.css" />
   </head>
 
   <body>
@@ -65,8 +66,9 @@
       </div>
     </header>
 
+    <main>
+
     <!-- Background image -->
-    <div id="background-image"></div>
 
     <!-- Title -->
     <div id="title">Neuigkeiten</div>
@@ -94,9 +96,9 @@
             var contentEl = document.createElement("div");
             contentEl.className = "group-content";
 
-            group.images.forEach(function(img) {
+            group.images.forEach(function(img, imgIndex) {
               var containerEl = document.createElement("div");
-              containerEl.className = "gallery-image-container";
+              containerEl.className = "gallery-image-container lb-trigger";
               var el = document.createElement("img");
               el.src = img.medium;
               el.srcset = img.thumb + " 160w, " + img.medium + " 500w, " + img.full + " 1920w";
@@ -106,6 +108,9 @@
               el.width = 300;
               el.height = 400;
               containerEl.appendChild(el);
+              containerEl.addEventListener("click", function() {
+                lightbox.open(group.images, imgIndex);
+              });
               contentEl.appendChild(containerEl);
             });
 
@@ -171,19 +176,11 @@
         </a>
       </p>
     </div>
+    </main>
+
 
     <script src="./scripts/script.js"></script>
     <script src="./scripts/libraries/fj-grid/fj-grid.js"></script>
-    <script>
-      fjGallery(
-        document.querySelectorAll(
-          "div#container > div.group > div.group-content",
-        ),
-        {
-          itemSelector:
-            "div#container > div.group > div.group-content > div.gallery-image-container",
-        },
-      );
-    </script>
+    <script src="./scripts/slideshow.js"></script>
   </body>
 </html>
