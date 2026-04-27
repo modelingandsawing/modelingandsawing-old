@@ -1,11 +1,3 @@
-// Show the language selection menu
-function showLanguageMenu() {
-  const target = document.querySelector("div#change-language");
-  if (target) {
-    target.style.visibility = "visible";
-  }
-}
-
 function showNavigationMenu() {
   const target = document.querySelector("div#navigation-menu");
   if (target) {
@@ -14,14 +6,6 @@ function showNavigationMenu() {
 }
 
 document.onclick = (e) => {
-  // Hide the language selection menu
-  if (e.target.id !== "icon-change-language") {
-    const target = document.querySelector("div#change-language");
-    if (target) {
-      target.style.visibility = "hidden";
-    }
-  }
-
   // Hide the navigation menu
   if (e.target.id !== "icon-navigation-menu") {
     const target = document.querySelector("div#navigation-menu");

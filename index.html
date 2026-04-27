@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
   <head>
     <meta charset="UTF-8" />
@@ -17,31 +17,7 @@
   <body>
     <!-- Header -->
     <header>
-      <div id="language">
-        <!-- <img
-          id="icon-change-language"
-          class="icon"
-          src="./images/language.svg"
-          onclick="showLanguageMenu()"
-        />
-        <div id="change-language" class="menu left">
-          <a class="menu-item" href="/index.html')">
-            Deutsch
-          </div>
-          <div
-            class="menu-item"
-            onclick="redirect('./other-languages/ru/index.html')"
-          >
-            Русский
-          </div>
-          <div
-            class="menu-item"
-            onclick="redirect('./other-languages/uk/index.html')"
-          >
-            Українська
-          </div>
-        </div> -->
-      </div>
+      <div id="language"></div>
       <div id="header-title-container">
         <div id="header-title">
           <p>Modeatelier</p>
@@ -70,554 +46,509 @@
     </header>
 
     <main>
+      <!-- Container -->
+      <div id="main-container">
+        <img
+          src="./images/portrait.jpg"
+          alt="portrait"
+          class="portrait main-portrait"
+        />
 
-    <!-- Background image -->
-
-    <!-- Container -->
-    <div id="main-container">
-      <img
-        src="./images/portrait.jpg"
-        alt="portrait"
-        class="portrait main-portrait"
-      />
-
-      <div class="primary-background padding-horizontal padding-vertical">
-        <div class="title-container container">
-          <!-- Title -->
-          <div id="title">Modeatelier</div>
-          <p id="subtitle">bei Liubov Mykhalchych</p>
-          <div id="title-description">
-            <h3>Professionelle Maß-, Braut- und<br />Änderungsschneiderei</h3>
-            <p>Herzlich willkommen!</p>
-            <br />
-            <p>
-              Wir fertigen hochwertige Damenbekleidung und Brautkleider nach Maß
-              und übernehmen professionelle Änderungen sowie Reparaturen mit
-              größter Sorgfalt.
-            </p>
-            <p>
-              In unserem Atelier entstehen Damen- und Hochzeitskleider in allen
-              Stilrichtungen, individuell abgestimmt auf Ihre Wünsche und Ihren
-              Körpertyp. Jedes Kleidungsstück wird nach Ihren Vorstellungen,
-              Skizzen oder Referenzfotos angefertigt, unabhängig von Design oder
-              Komplexität.
-            </p>
+        <div class="primary-background padding-horizontal padding-vertical">
+          <div class="title-container container">
+            <!-- Title -->
+            <div id="title">Modeatelier</div>
+            <p id="subtitle">bei Liubov Mykhalchych</p>
+            <div id="title-description">
+              <h3>Professionelle Maß-, Braut- und<br />Änderungsschneiderei</h3>
+              <p>Herzlich willkommen!</p>
+              <br />
+              <p>
+                Wir fertigen hochwertige Damenbekleidung und Brautkleider nach
+                Maß und übernehmen professionelle Änderungen sowie Reparaturen
+                mit größter Sorgfalt.
+              </p>
+              <p>
+                In unserem Atelier entstehen Damen- und Hochzeitskleider in
+                allen Stilrichtungen, individuell abgestimmt auf Ihre Wünsche
+                und Ihren Körpertyp. Jedes Kleidungsstück wird nach Ihren
+                Vorstellungen, Skizzen oder Referenzfotos angefertigt,
+                unabhängig von Design oder Komplexität.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="services-container container padding-horizontal">
-        <h2 class="center-text">Wir bieten</h2>
-        <div class="services">
-          <a href="#sewing" class="service">
+        <div class="services-container container padding-horizontal">
+          <h2 class="center-text">Wir bieten</h2>
+          <div class="services">
+            <a href="#sewing" class="service">
+              <img
+                src="./images/services-icons/sewing.jpg"
+                class="service-icon"
+                loading="lazy"
+              />
+              <h4 class="center-text">
+                Maß-<br />schneiderei&nbsp<span class="link-arrow">↗</span>
+              </h4>
+            </a>
+            <a href="#wedding-dresses" class="service">
+              <img
+                src="./images/services-icons/wedding-dresses.jpg"
+                class="service-icon"
+                loading="lazy"
+              />
+              <h4 class="center-text">
+                Braut-<br />schneiderei&nbsp<span class="link-arrow">↗</span>
+              </h4>
+            </a>
+            <a href="#repair" class="service">
+              <img
+                src="./images/services-icons/repair.jpg"
+                class="service-icon"
+                loading="lazy"
+              />
+              <h4 class="center-text">
+                Änderungs-<br />schneiderei&nbsp<span class="link-arrow"
+                  >↗</span
+                >
+              </h4>
+            </a>
+            <a href="#fabric" class="service">
+              <img
+                src="./images/services-icons/fabric.jpg"
+                class="service-icon"
+                loading="lazy"
+              />
+              <h4 class="center-text">
+                Stoffe & Materialien&nbsp<span class="link-arrow">↗</span>
+              </h4>
+            </a>
+          </div>
+        </div>
+
+        <div class="container split padding-horizontal">
+          <div class="description-container">
+            <h2>Über das Modeatelier</h2>
+            <p>
+              Unser Atelier befindet sich in einem hellen und gemütlichen Salon
+              im Herzen von Jena, in der Knebelstraße 3, im historischen Gebäude
+              Villa am Paradies, direkt gegenüber dem Bahnhof Paradies und neben
+              dem Busbahnhof.
+            </p>
+            <p>
+              Wir empfangen Sie persönlich und nehmen uns Zeit für Ihre Wünsche.
+              Jedes Kleidungsstück entsteht in sorgfältiger Handarbeit mit
+              höchstem Anspruch an Passform und Verarbeitung.
+            </p>
+            <p>
+              Qualität, Präzision und Liebe zum Detail stehen bei uns im
+              Mittelpunkt. So entstehen einzigartige Kleidungsstücke, die
+              individuell für Sie entworfen und gefertigt werden.
+            </p>
+            <p>
+              Gerne bringen Sie eigene Skizzen oder Ideen mit. Gemeinsam wählen
+              wir Stoffe, Farben und Accessoires für Ihr persönliches
+              Kleidungsstück aus.
+            </p>
+            <a href="#map" class="link-button">
+              <button>
+                Auf der Karte anzeigen&nbsp<span class="link-arrow">↗</span>
+              </button>
+            </a>
+          </div>
+          <div class="reviews-container">
+            <div class="review">
+              <p>
+                Das Atelier hat mir sehr gut gefallen. Hell, sauber und
+                gemütlich. Das freundliche und aufmerksame Personal unterstützt
+                kompetent bei der Auswahl von Stoffen und Stil. Hervorragende
+                Arbeitsqualität! Ich komme auf jeden Fall wieder. Sehr
+                empfehlenswert!
+              </p>
+              <span class="review-author">Inna D.</span>
+            </div>
+            <div class="review">
+              <p class="reviewText">
+                Eine äußerst talentierte Handwerkerin. Sie hat bereits mehrere
+                Stücke für mich genäht, alle in hervorragender Qualität. Man
+                merkt, dass sie ihre Arbeit mit Leidenschaft ausführt. Ich kann
+                sie allen empfehlen, die luxuriös aussehen möchten!
+              </p>
+              <span class="review-author">Lisa V.</span>
+            </div>
+            <div class="review">
+              <p class="reviewText">
+                Ich habe mich vom ersten Moment an willkommen gefühlt. Der
+                professionelle Umgang und die respektvolle, aufmerksame Art
+                hinterlassen einen sehr positiven Eindruck. Ich kann das
+                Modeatelier uneingeschränkt empfehlen!
+              </p>
+              <span class="review-author">Natalia V.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="clothing-to-order container split padding-horizontal">
+          <div class="clothing-to-order-image">
             <img
-              src="./images/services-icons/sewing.jpg"
-              class="service-icon"
+              src="./images/additional-portaits/1.jpg"
+              alt="portrait"
               loading="lazy"
             />
-            <h4 class="center-text">
-              Maß-<br />schneiderei&nbsp<span class="link-arrow">↗</span>
-            </h4>
-          </a>
-          <a href="#wedding-dresses" class="service">
+          </div>
+          <div class="clothing-to-order">
+            <h2>Kleidung auf Bestellung</h2>
+            <p>
+              Maßgeschneiderte Kleidung ist eine besondere Form der
+              Selbstdarstellung. Sie unterstreicht Ihren Stil, zeigt Ihre
+              Persönlichkeit und hebt Ihre Vorlieben hervor. So entsteht ein
+              individuelles Erscheinungsbild, das Ihren Geschmack und Ihre Figur
+              optimal zur Geltung bringt. Mit unserer Unterstützung erhalten Sie
+              Kleidung in Ihrem eigenen Stil, in der Sie sich selbstbewusst,
+              wohl und harmonisch fühlen.
+            </p>
+          </div>
+        </div>
+
+        <div class="primary-background padding-horizontal padding-vertical">
+          <div class="uniqueness-container container">
             <img
-              src="./images/services-icons/wedding-dresses.jpg"
-              class="service-icon"
+              src="./images/additional-portaits/2.jpg"
+              alt="portrait"
+              class="uniqueness-image"
               loading="lazy"
             />
-            <h4 class="center-text">
-              Braut-<br />schneiderei&nbsp<span class="link-arrow">↗</span>
-            </h4>
-          </a>
-          <a href="#repair" class="service">
+            <h2>Einzigartigkeit</h2>
+            <p>
+              Maßgeschneiderte Kleidung bewahrt die Einzigartigkeit Ihres
+              persönlichen Stils und sorgt dafür, dass Sie stets individuell
+              auftreten. Sie können sich an Entwürfen bekannter Couturiers
+              orientieren, ein Lieblingskleid nachschneidern lassen oder mehrere
+              Designideen in einem Kleidungsstück vereinen.
+            </p>
+            <p>
+              Ein weiterer Vorteil: Sie müssen nicht befürchten, dass jemand bei
+              einem Anlass dasselbe Kleid trägt wie Sie. Ihre Kleidung wird
+              speziell für Sie gefertigt und hebt sich deutlich von der
+              Massenware ab. Ihre Auswahl ist nicht an vorhandene Modelle im
+              Geschäft gebunden. Alles, was Sie sich vorstellen, wird nach Ihren
+              Wünschen genäht.
+            </p>
+            <p>
+              Wenn Sie im Internet oder in einem Modemagazin ein Modell
+              entdecken und es perfekt an Ihre Figur anpassen möchten, bietet
+              die Maßschneiderei die passende Lösung.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="qualitative-container container split-free padding-horizontal"
+        >
+          <div class="qualitative-main">
+            <h2>Hochwertige Materialien zum Nähen</h2>
+            <p>
+              Hochwertige Stoffe und sorgfältig ausgewählte Accessoires sind die
+              Grundlage langlebiger und qualitativ hochwertiger Kleidung. Bei
+              einer Maßanfertigung haben Sie die Möglichkeit, Stoffart,
+              Struktur, Stärke und Farbgebung frei zu wählen.
+            </p>
+            <p>
+              Bevorzugt werden edle Naturstoffe wie Seide, Wolle, Baumwolle,
+              Kaschmir, Leinen oder Denim. Sie sind hautfreundlich, angenehm zu
+              tragen und lassen die Haut atmen. Im Vergleich zu synthetischen
+              Materialien tragen sie sich komfortabler, behalten ihre Form und
+              überzeugen durch ihre Langlebigkeit. Zudem wirkt Kleidung aus
+              hochwertigen Naturstoffen sichtbar edler als vergleichbare Modelle
+              aus synthetischen Fasern, die häufig in industrieller
+              Massenproduktion verwendet werden und sich weniger angenehm
+              anfühlen können.
+            </p>
+          </div>
+          <div class="qualitative-secondary-container">
+            <div class="qualitative-secondary-placeholder"></div>
+            <div class="qualitative-secondary">
+              <img
+                src="./images/services-icons/sewing2.jpg"
+                class="qualitative-icon"
+                loading="lazy"
+              />
+              <p>
+                Auf Bestellung gefertigte Kleidungsstücke aus hochwertigen
+                Stoffen wirken wertiger, bereiten lange Freude und sind
+                gesundheitlich unbedenklich.
+              </p>
+            </div>
+            <div class="qualitative-secondary-placeholder"></div>
+          </div>
+        </div>
+
+        <div class="perfect-fit-container container">
+          <div class="perfect-fit-text-container padding-horizontal">
+            <h2>Passt perfekt zur Figur</h2>
+            <p>
+              Was tun, wenn gekaufte Kleidung nicht richtig sitzt oder die
+              Proportionen Ihrer Figur schwer mit Standardgrößen vereinbar sind?
+              Wenn Brust, Taille, Hüfte und Körpergröße nicht ideal zueinander
+              passen, ist Maßschneiderei die richtige Lösung.
+            </p>
+            <p>
+              Durch einen individuell erstellten Schnitt erreichen wir eine
+              besonders präzise Passform. Für jeden Neukunden fertigen wir ein
+              eigenes Schnittmuster an.
+            </p>
+            <p>
+              Dabei berücksichtigen wir alle Besonderheiten Ihrer Figur, betonen
+              Ihre Vorzüge und gleichen kleine Unstimmigkeiten harmonisch aus.
+              Wer einmal ein Kleidungsstück getragen hat, das speziell für ihn
+              angefertigt wurde, möchte auf konfektionierte Kleidung meist nicht
+              mehr zurückgreifen.
+            </p>
+          </div>
+          <div class="perfect-fit-image-container padding-horizontal">
             <img
-              src="./images/services-icons/repair.jpg"
-              class="service-icon"
+              src="./images/additional-portaits/3.jpg"
+              alt="portrait"
               loading="lazy"
             />
-            <h4 class="center-text">
-              Änderungs-<br />schneiderei&nbsp<span class="link-arrow">↗</span>
-            </h4>
+          </div>
+        </div>
+
+        <div class="primary-background padding-horizontal padding-vertical">
+          <div class="services-detailed-container container">
+            <h2 class="center-text">Dienstleistungen</h2>
+            <details open class="service-detailed" id="sewing">
+              <summary>Neue Kleidung nähen</summary>
+              <p>
+                Wir fertigen Damenbekleidung in vielfältigen Schnitten und
+                Stilrichtungen, darunter Kleider, Blusen, Röcke, Anzüge, Hosen,
+                Oberteile, Hemden, Jacken und Mäntel. Darüber hinaus nähen wir
+                Abend- und Festbekleidung, Businessmode für Damen, Brautkleider
+                und Brautkostüme, Show- und Bühnenkostüme, Vintage-Kleidung
+                sowie Kleidung für Kinder.
+              </p>
+            </details>
+            <details open class="service-detailed" id="wedding-dresses">
+              <summary>Hochzeitskleid</summary>
+              <p>
+                In unserem elektronischen Katalog können Sie Brautkleider
+                auswählen, die nach Standardkonfektionsgrößen gefertigt werden.
+                Das Kleid wird für Sie angefertigt und entweder direkt an Ihre
+                Adresse versendet oder im Atelier zur Abholung bereitgestellt.
+                Bei Abholung passen wir das Kleid im Salon kostenlos an Ihre
+                Maße an.
+              </p>
+              <p>
+                Bitte beachten Sie: Kleider aus unserem E-Katalog werden nicht
+                als individuelle Maßanfertigung genäht.
+              </p>
+              <p>
+                So bestellen Sie: Schreiben Sie uns über das Kontaktformular auf
+                dieser Seite. Bitte geben Sie Ihre Standard-Konfektionsgröße
+                sowie Ihre Körpergröße an. Anschließend erhalten Sie eine
+                Rückmeldung mit weiteren Informationen sowie den
+                Zahlungsdetails. Für die Bestellung ist eine Anzahlung von 30 %
+                des Gesamtbetrags erforderlich.
+              </p>
+              <p>
+                Die Anfertigungszeit beträgt je nach Aufwand etwa drei bis sechs
+                Monate. Nach Fertigstellung informieren wir Sie und senden Ihnen
+                ein Foto des Kleides zu. Nach Begleichung des Restbetrags
+                versenden wir das Kleid oder Sie holen es persönlich im Atelier
+                ab. Falls Anpassungen erforderlich sind, können diese vor Ort
+                vorgenommen werden.
+              </p>
+              <p>
+                Wenn Sie ein exklusives Brautkleid nach Maß wünschen, fertigen
+                wir dieses gerne individuell nach Ihren Maßen und
+                berücksichtigen dabei all Ihre persönlichen Vorstellungen.
+              </p>
+            </details>
+            <details open class="service-detailed" id="repair">
+              <summary>Änderungsschneiderei</summary>
+              <p>
+                Wir bieten professionelle Änderungen und Reparaturen mit hoher
+                handwerklicher Qualität an. Ob Damen-, Herren- oder
+                Kinderbekleidung, Businessmode, Braut- und Abendkleidung oder
+                Heimtextilien, wir bearbeiten Kleidungsstücke jeder Art.
+              </p>
+              <p>
+                Unser Leistungsspektrum umfasst unter anderem Kürzen, Weiten,
+                Enger- oder Längermachen, Reparaturen sowie die kreative
+                Umgestaltung bestehender Kleidungsstücke. Aus Lieblingsstücken
+                entstehen so neue, tragbare Designs. Für jedes Kleidungsstück
+                finden wir eine passende und individuelle Lösung, auch bei
+                anspruchsvollen Arbeiten.
+              </p>
+            </details>
+            <details open class="service-detailed" id="fabric">
+              <summary>Stoffe & Materialien</summary>
+              <p>
+                Gerne bestellen wir für Sie hochwertige Stoffe und passende
+                Accessoires für Ihr Kleidungsstück. Qualitativ hochwertige
+                Materialien sind die Grundlage langlebiger und wertiger
+                Kleidung.
+              </p>
+              <p>
+                Wir arbeiten bevorzugt mit Naturstoffen wie Seide, Leinen,
+                Wolle, Baumwolle, Kaschmir oder Denim sowie mit ausgewählten
+                Premiumstoffen mit geringem Anteil synthetischer Fasern. Diese
+                Materialien sind hautfreundlich, angenehm zu tragen, langlebig
+                und wirken optisch besonders hochwertig.
+              </p>
+              <p>
+                Basierend auf Ihren Wünschen und Vorstellungen wählen wir
+                gemeinsam den passenden Stoff aus. Sie können Materialien direkt
+                in unserem Atelier auswählen oder uns kontaktieren, damit wir
+                geeignete Stoffe gezielt für Sie bestellen.
+              </p>
+            </details>
+          </div>
+        </div>
+
+        <div class="map-container container padding-horizontal" id="map">
+          <h2 class="center-text">Wo finden Sie uns</h2>
+          <a href="https://maps.app.goo.gl/kr42mFzagvmnmQhq7" class="map-link">
+            <img src="/images/map.png" alt="map" class="map" loading="lazy" />
           </a>
-          <a href="#fabric" class="service">
-            <img
-              src="./images/services-icons/fabric.jpg"
-              class="service-icon"
-              loading="lazy"
-            />
-            <h4 class="center-text">
-              Stoffe & Materialien&nbsp<span class="link-arrow">↗</span>
-            </h4>
-          </a>
-        </div>
-      </div>
-
-      <div class="container split padding-horizontal">
-        <div class="description-container">
-          <h2>Über das Modeatelier</h2>
-          <p>
-            Unser Atelier befindet sich in einem hellen und gemütlichen Salon im
-            Herzen von Jena, in der Knebelstraße 3, im historischen Gebäude
-            Villa am Paradies, direkt gegenüber dem Bahnhof Paradies und neben
-            dem Busbahnhof.
-          </p>
-          <p>
-            Wir empfangen Sie persönlich und nehmen uns Zeit für Ihre Wünsche.
-            Jedes Kleidungsstück entsteht in sorgfältiger Handarbeit mit
-            höchstem Anspruch an Passform und Verarbeitung.
-          </p>
-          <p>
-            Qualität, Präzision und Liebe zum Detail stehen bei uns im
-            Mittelpunkt. So entstehen einzigartige Kleidungsstücke, die
-            individuell für Sie entworfen und gefertigt werden.
-          </p>
-          <p>
-            Gerne bringen Sie eigene Skizzen oder Ideen mit. Gemeinsam wählen
-            wir Stoffe, Farben und Accessoires für Ihr persönliches
-            Kleidungsstück aus.
-          </p>
-          <a href="#map" class="link-button">
-            <button>
-              Auf der Karte anzeigen&nbsp<span class="link-arrow">↗</span>
-            </button>
-          </a>
-        </div>
-        <div class="reviews-container">
-          <div class="review">
-            <p>
-              Das Atelier hat mir sehr gut gefallen. Hell, sauber und gemütlich.
-              Das freundliche und aufmerksame Personal unterstützt kompetent bei
-              der Auswahl von Stoffen und Stil. Hervorragende Arbeitsqualität!
-              Ich komme auf jeden Fall wieder. Sehr empfehlenswert!
-            </p>
-            <span class="review-author">Inna D.</span>
-          </div>
-          <div class="review">
-            <p class="reviewText">
-              Eine äußerst talentierte Handwerkerin. Sie hat bereits mehrere
-              Stücke für mich genäht, alle in hervorragender Qualität. Man
-              merkt, dass sie ihre Arbeit mit Leidenschaft ausführt. Ich kann
-              sie allen empfehlen, die luxuriös aussehen möchten!
-            </p>
-            <span class="review-author">Lisa V.</span>
-          </div>
-          <div class="review">
-            <p class="reviewText">
-              Ich habe mich vom ersten Moment an willkommen gefühlt. Der
-              professionelle Umgang und die respektvolle, aufmerksame Art
-              hinterlassen einen sehr positiven Eindruck. Ich kann das
-              Modeatelier uneingeschränkt empfehlen!
-            </p>
-            <span class="review-author">Natalia V.</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="clothing-to-order container split padding-horizontal">
-        <div class="clothing-to-order-image">
-          <img
-            src="./images/additional-portaits/1.jpg"
-            alt="portrait"
-            loading="lazy"
-          />
-        </div>
-        <div class="clothing-to-order">
-          <h2>Kleidung auf Bestellung</h2>
-          <p>
-            Maßgeschneiderte Kleidung ist eine besondere Form der
-            Selbstdarstellung. Sie unterstreicht Ihren Stil, zeigt Ihre
-            Persönlichkeit und hebt Ihre Vorlieben hervor. So entsteht ein
-            individuelles Erscheinungsbild, das Ihren Geschmack und Ihre Figur
-            optimal zur Geltung bringt. Mit unserer Unterstützung erhalten Sie
-            Kleidung in Ihrem eigenen Stil, in der Sie sich selbstbewusst, wohl
-            und harmonisch fühlen.
-          </p>
-        </div>
-      </div>
-
-      <div class="primary-background padding-horizontal padding-vertical">
-        <div class="uniqueness-container container">
-          <img
-            src="./images/additional-portaits/2.jpg"
-            alt="portrait"
-            class="uniqueness-image"
-            loading="lazy"
-          />
-          <h2>Einzigartigkeit</h2>
-          <p>
-            Maßgeschneiderte Kleidung bewahrt die Einzigartigkeit Ihres
-            persönlichen Stils und sorgt dafür, dass Sie stets individuell
-            auftreten. Sie können sich an Entwürfen bekannter Couturiers
-            orientieren, ein Lieblingskleid nachschneidern lassen oder mehrere
-            Designideen in einem Kleidungsstück vereinen.
-          </p>
-          <p>
-            Ein weiterer Vorteil: Sie müssen nicht befürchten, dass jemand bei
-            einem Anlass dasselbe Kleid trägt wie Sie. Ihre Kleidung wird
-            speziell für Sie gefertigt und hebt sich deutlich von der Massenware
-            ab. Ihre Auswahl ist nicht an vorhandene Modelle im Geschäft
-            gebunden. Alles, was Sie sich vorstellen, wird nach Ihren Wünschen
-            genäht.
-          </p>
-          <p>
-            Wenn Sie im Internet oder in einem Modemagazin ein Modell entdecken
-            und es perfekt an Ihre Figur anpassen möchten, bietet die
-            Maßschneiderei die passende Lösung.
-          </p>
-        </div>
-      </div>
-
-      <div
-        class="qualitative-container container split-free padding-horizontal"
-      >
-        <div class="qualitative-main">
-          <h2>Hochwertige Materialien zum Nähen</h2>
-          <p>
-            Hochwertige Stoffe und sorgfältig ausgewählte Accessoires sind die
-            Grundlage langlebiger und qualitativ hochwertiger Kleidung. Bei
-            einer Maßanfertigung haben Sie die Möglichkeit, Stoffart, Struktur,
-            Stärke und Farbgebung frei zu wählen.
-          </p>
-          <p>
-            Bevorzugt werden edle Naturstoffe wie Seide, Wolle, Baumwolle,
-            Kaschmir, Leinen oder Denim. Sie sind hautfreundlich, angenehm zu
-            tragen und lassen die Haut atmen. Im Vergleich zu synthetischen
-            Materialien tragen sie sich komfortabler, behalten ihre Form und
-            überzeugen durch ihre Langlebigkeit. Zudem wirkt Kleidung aus
-            hochwertigen Naturstoffen sichtbar edler als vergleichbare Modelle
-            aus synthetischen Fasern, die häufig in industrieller
-            Massenproduktion verwendet werden und sich weniger angenehm anfühlen
-            können.
-          </p>
-        </div>
-        <div class="qualitative-secondary-container">
-          <div class="qualitative-secondary-placeholder"></div>
-          <div class="qualitative-secondary">
-            <img
-              src="./images/services-icons/sewing2.jpg"
-              class="qualitative-icon"
-              loading="lazy"
-            />
-            <p>
-              Auf Bestellung gefertigte Kleidungsstücke aus hochwertigen Stoffen
-              wirken wertiger, bereiten lange Freude und sind gesundheitlich
-              unbedenklich.
-            </p>
-          </div>
-          <div class="qualitative-secondary-placeholder"></div>
-        </div>
-      </div>
-
-      <div class="perfect-fit-container container">
-        <div class="perfect-fit-text-container padding-horizontal">
-          <h2>Passt perfekt zur Figur</h2>
-          <p>
-            Was tun, wenn gekaufte Kleidung nicht richtig sitzt oder die
-            Proportionen Ihrer Figur schwer mit Standardgrößen vereinbar sind?
-            Wenn Brust, Taille, Hüfte und Körpergröße nicht ideal zueinander
-            passen, ist Maßschneiderei die richtige Lösung.
-          </p>
-          <p>
-            Durch einen individuell erstellten Schnitt erreichen wir eine
-            besonders präzise Passform. Für jeden Neukunden fertigen wir ein
-            eigenes Schnittmuster an.
-          </p>
-          <p>
-            Dabei berücksichtigen wir alle Besonderheiten Ihrer Figur, betonen
-            Ihre Vorzüge und gleichen kleine Unstimmigkeiten harmonisch aus. Wer
-            einmal ein Kleidungsstück getragen hat, das speziell für ihn
-            angefertigt wurde, möchte auf konfektionierte Kleidung meist nicht
-            mehr zurückgreifen.
-          </p>
-        </div>
-        <div class="perfect-fit-image-container padding-horizontal">
-          <img
-            src="./images/additional-portaits/3.jpg"
-            alt="portrait"
-            loading="lazy"
-          />
-        </div>
-      </div>
-
-      <div class="primary-background padding-horizontal padding-vertical">
-        <div class="services-detailed-container container">
-          <h2 class="center-text">Dienstleistungen</h2>
-          <details open class="service-detailed" id="sewing">
-            <summary>Neue Kleidung nähen</summary>
-            <p>
-              Wir fertigen Damenbekleidung in vielfältigen Schnitten und
-              Stilrichtungen, darunter Kleider, Blusen, Röcke, Anzüge, Hosen,
-              Oberteile, Hemden, Jacken und Mäntel. Darüber hinaus nähen wir
-              Abend- und Festbekleidung, Businessmode für Damen, Brautkleider
-              und Brautkostüme, Show- und Bühnenkostüme, Vintage-Kleidung sowie
-              Kleidung für Kinder.
-            </p>
-          </details>
-          <details open class="service-detailed" id="wedding-dresses">
-            <summary>Hochzeitskleid</summary>
-            <p>
-              In unserem elektronischen Katalog können Sie Brautkleider
-              auswählen, die nach Standardkonfektionsgrößen gefertigt werden.
-              Das Kleid wird für Sie angefertigt und entweder direkt an Ihre
-              Adresse versendet oder im Atelier zur Abholung bereitgestellt. Bei
-              Abholung passen wir das Kleid im Salon kostenlos an Ihre Maße an.
-            </p>
-            <p>
-              Bitte beachten Sie: Kleider aus unserem E-Katalog werden nicht als
-              individuelle Maßanfertigung genäht.
-            </p>
-            <p>
-              So bestellen Sie: Schreiben Sie uns über das Kontaktformular auf
-              dieser Seite. Bitte geben Sie Ihre Standard-Konfektionsgröße sowie
-              Ihre Körpergröße an. Anschließend erhalten Sie eine Rückmeldung
-              mit weiteren Informationen sowie den Zahlungsdetails. Für die
-              Bestellung ist eine Anzahlung von 30 % des Gesamtbetrags
-              erforderlich.
-            </p>
-            <p>
-              Die Anfertigungszeit beträgt je nach Aufwand etwa drei bis sechs
-              Monate. Nach Fertigstellung informieren wir Sie und senden Ihnen
-              ein Foto des Kleides zu. Nach Begleichung des Restbetrags
-              versenden wir das Kleid oder Sie holen es persönlich im Atelier
-              ab. Falls Anpassungen erforderlich sind, können diese vor Ort
-              vorgenommen werden.
-            </p>
-            <p>
-              Wenn Sie ein exklusives Brautkleid nach Maß wünschen, fertigen wir
-              dieses gerne individuell nach Ihren Maßen und berücksichtigen
-              dabei all Ihre persönlichen Vorstellungen.
-            </p>
-          </details>
-          <details open class="service-detailed" id="repair">
-            <summary>Änderungsschneiderei</summary>
-            <p>
-              Wir bieten professionelle Änderungen und Reparaturen mit hoher
-              handwerklicher Qualität an. Ob Damen-, Herren- oder
-              Kinderbekleidung, Businessmode, Braut- und Abendkleidung oder
-              Heimtextilien, wir bearbeiten Kleidungsstücke jeder Art.
-            </p>
-            <p>
-              Unser Leistungsspektrum umfasst unter anderem Kürzen, Weiten,
-              Enger- oder Längermachen, Reparaturen sowie die kreative
-              Umgestaltung bestehender Kleidungsstücke. Aus Lieblingsstücken
-              entstehen so neue, tragbare Designs. Für jedes Kleidungsstück
-              finden wir eine passende und individuelle Lösung, auch bei
-              anspruchsvollen Arbeiten.
-            </p>
-          </details>
-          <details open class="service-detailed" id="fabric">
-            <summary>Stoffe & Materialien</summary>
-            <p>
-              Gerne bestellen wir für Sie hochwertige Stoffe und passende
-              Accessoires für Ihr Kleidungsstück. Qualitativ hochwertige
-              Materialien sind die Grundlage langlebiger und wertiger Kleidung.
-            </p>
-            <p>
-              Wir arbeiten bevorzugt mit Naturstoffen wie Seide, Leinen, Wolle,
-              Baumwolle, Kaschmir oder Denim sowie mit ausgewählten
-              Premiumstoffen mit geringem Anteil synthetischer Fasern. Diese
-              Materialien sind hautfreundlich, angenehm zu tragen, langlebig und
-              wirken optisch besonders hochwertig.
-            </p>
-            <p>
-              Basierend auf Ihren Wünschen und Vorstellungen wählen wir
-              gemeinsam den passenden Stoff aus. Sie können Materialien direkt
-              in unserem Atelier auswählen oder uns kontaktieren, damit wir
-              geeignete Stoffe gezielt für Sie bestellen.
-            </p>
-          </details>
-        </div>
-      </div>
-
-      <!-- <div
-        class="who-am-i-container container split padding-horizontal padding-vertical"
-      >
-        <div class="who-am-i-text-container">
-          <h2>Хто я</h2>
-          <p>
-            Мене звати Liubov Mykhalchych. Я конструктор-модельєр жіночого одягу
-            та власник Modeatelier по пошиттю одягу на замовлення з багаторічним
-            стажем роботи, автор зареєстрованого методу побудови викрійки
-            жіночої сукні та рукава, а також автор навчальних відео-уроків по
-            конструюванню, моделюванню, розкрою та пошиттю одягу.
-          </p>
-          <hr />
-        </div>
-        <div class="who-am-i-image-container">
-          <img src="./images/portrait.jpg" alt="portrait" />
-        </div>
-      </div>
-
-      <div class="primary-background padding-horizontal padding-vertical">
-        <div class="my-story-container container split">
-          <div class="my-story-image-container">
-            <img src="./images/portrait.jpg" alt="portrait" />
-          </div>
-          <div class="my-story-text-container">
-            <h2>Моя історія</h2>
-            <p>
-              У 2005 році закінчила навчання як конструктор модельєр жіночого
-              одягу з відзнакою.
-            </p>
-            <p>
-              Більше 10 років разом із командою фахівців виготовляла
-              високоякісний жіночий, чоловічий та дитячий одяг на замовлення.
-            </p>
-            <p>
-              Починаючи з 2013 року додатково вела курси моделювання, крою та
-              шиття одягу офлайн.
-            </p>
-            <p>
-              У 2017 році зареєструвала авторський метод побудови викрійки
-              жіночої сукні та рукава, та навчальну серію відео уроків з шиття
-              одягу.
-            </p>
-            <p>
-              У 2023 році відкрила Modeatelier з пошиття одягу на замовлення, а
-              також продаж весільних суконь у Німеччині.
-            </p>
-          </div>
-        </div>
-      </div> -->
-
-      <div class="map-container container padding-horizontal" id="map">
-        <h2 class="center-text">Wo finden Sie uns</h2>
-        <a href="https://maps.app.goo.gl/kr42mFzagvmnmQhq7" class="map-link">
-          <img src="/images/map.png" alt="map" class="map" loading="lazy" />
-        </a>
-        <!-- <iframe
+          <!-- <iframe
           class="map"
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
           title="map"
           src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJj5gFn7uopkcRxOgWnCPPirM&key=AIzaSyDTOaQORSKAU2oLXpfi70MCQKs3tohJ_hs"
         ></iframe> -->
-        <h2>
-          Knebelstraße 3, Villa am Paradies, 07743 Jena<br />(+4915906446200)
-        </h2>
-        <div>
-          <a
-            href="https://maps.app.goo.gl/kr42mFzagvmnmQhq7"
-            class="link-button"
-          >
-            <button>Karte öffnen&nbsp<span class="link-arrow">↗</span></button>
-          </a>
-        </div>
-      </div>
-
-      <div class="contact-container container padding-horizontal">
-        <h2 class="center-text">Kontakt</h2>
-        <form
-          class="contact-form"
-          action="https://formspree.io/f/xpzkroqj"
-          method="post"
-        >
-          <input placeholder="Name" name="name" type="text" />
-          <input placeholder="Email *" name="email" type="email" required />
-          <textarea
-            rows="11"
-            name="message"
-            placeholder="Nachricht *"
-            required
-          ></textarea>
-          <label>
-            <input type="checkbox" required />
-            Ich bin mit der Verarbeitung meiner Daten durch
-            <a href="https://formspree.io"
-              >formspree.io&nbsp<span class="link-arrow">↗</span></a
+          <h2>
+            Knebelstraße 3, Villa am Paradies, 07743 Jena<br />(+4915906446200)
+          </h2>
+          <div>
+            <a
+              href="https://maps.app.goo.gl/kr42mFzagvmnmQhq7"
+              class="link-button"
             >
-            einverstanden. *
-          </label>
-          <button type="submit">Senden</button>
-        </form>
-        <h2 class="center-text">—</h2>
-        <div class="contact-icons-container">
-          <a href="mailto:mihalchich.lyubov@gmail.com" title="mail">
-            <div class="contact-icon">
-              <img
-                src="./images/contact-icons/gmail.svg"
-                alt="Gmail"
-                loading="lazy"
-              />
-            </div>
-          </a>
-          <a href="https://wa.me/+4915906446200" title="WhatsApp">
-            <div class="contact-icon">
-              <img
-                src="./images/contact-icons/whatsapp.svg"
-                alt="WhatsApp"
-                loading="lazy"
-              />
-            </div>
-          </a>
-          <a href="tel:+49-1590-6446200" title="call">
-            <div class="contact-icon">
-              <img
-                src="./images/contact-icons/phone.svg"
-                alt="Phone"
-                loading="lazy"
-              />
-            </div>
-          </a>
+              <button>
+                Karte öffnen&nbsp<span class="link-arrow">↗</span>
+              </button>
+            </a>
+          </div>
         </div>
-        <h2 class="center-text">—</h2>
-        <div class="review-button-container">
-          <a href="https://g.page/r/CRRUxfn-p1abEBM/review" class="link-button">
-            <button>
-              Bewerten Sie uns!&nbsp<span class="link-arrow">↗</span>
-            </button>
-          </a>
+
+        <div class="contact-container container padding-horizontal">
+          <h2 class="center-text">Kontakt</h2>
+          <form
+            class="contact-form"
+            action="https://formspree.io/f/xpzkroqj"
+            method="post"
+          >
+            <input placeholder="Name" name="name" type="text" />
+            <input placeholder="Email *" name="email" type="email" required />
+            <textarea
+              rows="11"
+              name="message"
+              placeholder="Nachricht *"
+              required
+            ></textarea>
+            <label>
+              <input type="checkbox" required />
+              Ich bin mit der Verarbeitung meiner Daten durch
+              <a href="https://formspree.io"
+                >formspree.io&nbsp<span class="link-arrow">↗</span></a
+              >
+              einverstanden. *
+            </label>
+            <button type="submit">Senden</button>
+          </form>
+          <h2 class="center-text">—</h2>
+          <div class="contact-icons-container">
+            <a href="mailto:mihalchich.lyubov@gmail.com" title="mail">
+              <div class="contact-icon">
+                <img
+                  src="./images/contact-icons/gmail.svg"
+                  alt="Gmail"
+                  loading="lazy"
+                />
+              </div>
+            </a>
+            <a href="https://wa.me/+4915906446200" title="WhatsApp">
+              <div class="contact-icon">
+                <img
+                  src="./images/contact-icons/whatsapp.svg"
+                  alt="WhatsApp"
+                  loading="lazy"
+                />
+              </div>
+            </a>
+            <a href="tel:+49-1590-6446200" title="call">
+              <div class="contact-icon">
+                <img
+                  src="./images/contact-icons/phone.svg"
+                  alt="Phone"
+                  loading="lazy"
+                />
+              </div>
+            </a>
+          </div>
+          <h2 class="center-text">—</h2>
+          <div class="review-button-container">
+            <a
+              href="https://g.page/r/CRRUxfn-p1abEBM/review"
+              class="link-button"
+            >
+              <button>
+                Bewerten Sie uns!&nbsp<span class="link-arrow">↗</span>
+              </button>
+            </a>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- Footer -->
-    <div id="footer">
-      <p id="copyright">
-        <a href="./privacy-policy.html">Datenschutzerklärung</a> |
-        <a href="./impressum.html">Impressum</a><br />Copyright © 2017
-        Mykhalchych Liubov. All Rights Reserved.
-      </p>
+      <!-- Footer -->
+      <div id="footer">
+        <p id="copyright">
+          <a href="./privacy-policy.html">Datenschutzerklärung</a> |
+          <a href="./impressum.html">Impressum</a><br />Copyright © 2017
+          Mykhalchych Liubov. All Rights Reserved.
+        </p>
 
-      <p id="social-icons">
-        <a
-          href="https://www.facebook.com/profile.php?id=100017189653101&fref=pb&hc_location=friends_tab&pnref=friends.all"
-        >
-          <img
-            src="./images/social-icons/facebook-icon.svg"
-            class="social-icon facebook"
-            loading="lazy"
-          />
-          Facebook
-        </a>
-        <a href="https://www.pinterest.com/mihalchichlyubo">
-          <img
-            src="./images/social-icons/pinterest-icon.svg"
-            class="social-icon pinterest"
-            loading="lazy"
-          />
-          Pinterest
-        </a>
-        <a href="https://www.instagram.com/sew_de_lux/">
-          <img
-            src="./images/social-icons/instagram-icon.svg"
-            class="social-icon instagram"
-            loading="lazy"
-          />
-          Instagram
-        </a>
-        <a href="https://www.youtube.com/channel/UClvXYm8UeH2J1ek2ZQgGQBw">
-          <img
-            src="./images/social-icons/youtube-icon.svg"
-            class="social-icon youtube"
-            loading="lazy"
-          />
-          YouTube
-        </a>
-      </p>
-    </div>
+        <p id="social-icons">
+          <a
+            href="https://www.facebook.com/profile.php?id=100017189653101&fref=pb&hc_location=friends_tab&pnref=friends.all"
+          >
+            <img
+              src="./images/social-icons/facebook-icon.svg"
+              class="social-icon facebook"
+              loading="lazy"
+            />
+            Facebook
+          </a>
+          <a href="https://www.pinterest.com/mihalchichlyubo">
+            <img
+              src="./images/social-icons/pinterest-icon.svg"
+              class="social-icon pinterest"
+              loading="lazy"
+            />
+            Pinterest
+          </a>
+          <a href="https://www.instagram.com/sew_de_lux/">
+            <img
+              src="./images/social-icons/instagram-icon.svg"
+              class="social-icon instagram"
+              loading="lazy"
+            />
+            Instagram
+          </a>
+          <a href="https://www.youtube.com/channel/UClvXYm8UeH2J1ek2ZQgGQBw">
+            <img
+              src="./images/social-icons/youtube-icon.svg"
+              class="social-icon youtube"
+              loading="lazy"
+            />
+            YouTube
+          </a>
+        </p>
+      </div>
     </main>
-
 
     <script src="./scripts/script.js"></script>
   </body>

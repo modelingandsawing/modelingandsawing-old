@@ -300,54 +300,6 @@ div.services-detailed-container {
 details.service-detailed {
   min-width: 100%;
 }
-/* 
-div.who-am-i-container {
-}
-
-div.who-am-i-text-container {
-}
-
-div.who-am-i-image-container {
-  margin-bottom: 70px;
-}
-
-div.who-am-i-image-container > img {
-  width: 100%;
-}
-
-div.who-am-i-image-container::before {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 100%;
-  top: 50px;
-  left: 50px;
-  background-color: var(--primary-color);
-}
-
-div.my-story-container {
-}
-
-div.my-story-container hr {
-  width: 90%;
-  margin: 0;
-  border-color: var(--background-color);
-}
-
-div.my-story-image-container {
-}
-
-div.my-story-image-container > img {
-  width: 100%;
-}
-
-div.my-story-text-container {
-  display: flex;
-  flex-direction: column;
-  align-items: end;
-  justify-content: center;
-  text-align: right;
-} */
 
 div.map-container {
   display: flex;

@@ -307,20 +307,6 @@ summary {
   /* display: flex; */
   justify-content: space-between;
 }
-/* 
-summary::after {
-  content: "";
-  width: 18px;
-  height: 10px;
-  background: url("../images/chevron-arrow.svg");
-  background-size: cover;
-  margin-left: 0.75em;
-  transition: 0.2s;
-} */
-/* 
-details[open] > summary::after {
-  transform: rotate(180deg);
-} */
 
 span.link-arrow {
   font-weight: bold;
