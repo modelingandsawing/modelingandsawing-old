@@ -70,7 +70,8 @@
             var contentEl = document.createElement("div");
             contentEl.className = "group-content";
 
-            group.images.forEach(function(img, imgIndex) {
+            var enabledImages = group.images.filter(function(img) { return !img.disabled; });
+            enabledImages.forEach(function(img, imgIndex) {
               var containerEl = document.createElement("div");
               containerEl.className = "gallery-image-container lb-trigger";
               var el = document.createElement("img");
@@ -83,7 +84,7 @@
               el.height = 400;
               containerEl.appendChild(el);
               containerEl.addEventListener("click", function() {
-                lightbox.open(group.images, imgIndex);
+                lightbox.open(enabledImages, imgIndex);
               });
               contentEl.appendChild(containerEl);
             });
