@@ -3,9 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1:0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Maßschneiderei</title>
     <link rel="icon" href="./images/icon.png" />
+    <link rel="preload" as="image" href="./images/background.svg" type="image/svg+xml" />
+    <link rel="preload" as="image" href="./images/portrait-800.webp" type="image/webp" />
     <link rel="stylesheet" href="./styles/template.css" />
     <link rel="stylesheet" href="./styles/new-main.css" />
     <meta
@@ -48,11 +50,16 @@
     <main>
       <!-- Container -->
       <div id="main-container">
-        <img
-          src="./images/portrait.jpg"
-          alt="portrait"
-          class="portrait main-portrait"
-        />
+        <picture>
+          <source srcset="./images/portrait-800.webp" type="image/webp" />
+          <img
+            src="./images/portrait.jpg"
+            alt="portrait"
+            class="portrait main-portrait"
+            style="aspect-ratio: 1/1"
+            fetchpriority="high"
+          />
+        </picture>
 
         <div class="primary-background padding-horizontal padding-vertical">
           <div class="title-container container">
@@ -191,11 +198,19 @@
 
         <div class="clothing-to-order container split padding-horizontal">
           <div class="clothing-to-order-image">
-            <img
-              src="./images/additional-portaits/1.jpg"
-              alt="portrait"
-              loading="lazy"
-            />
+            <picture>
+              <source
+                srcset="./images/additional-portaits/1-400.webp 400w, ./images/additional-portaits/1-800.webp 800w"
+                sizes="(max-width: 700px) 100vw, 50vw"
+                type="image/webp"
+              />
+              <img
+                src="./images/additional-portaits/1.jpg"
+                alt="portrait"
+                style="aspect-ratio: 3329/4993"
+                loading="lazy"
+              />
+            </picture>
           </div>
           <div class="clothing-to-order">
             <h2>Kleidung auf Bestellung</h2>
@@ -213,12 +228,20 @@
 
         <div class="primary-background padding-horizontal padding-vertical">
           <div class="uniqueness-container container">
-            <img
-              src="./images/additional-portaits/2.jpg"
-              alt="portrait"
-              class="uniqueness-image"
-              loading="lazy"
-            />
+            <picture>
+              <source
+                srcset="./images/additional-portaits/2-400.webp 400w, ./images/additional-portaits/2-800.webp 800w"
+                sizes="(max-width: 444px) 90vw, 400px"
+                type="image/webp"
+              />
+              <img
+                src="./images/additional-portaits/2.jpg"
+                alt="portrait"
+                class="uniqueness-image"
+                style="aspect-ratio: 3525/5287"
+                loading="lazy"
+              />
+            </picture>
             <h2>Einzigartigkeit</h2>
             <p>
               Maßgeschneiderte Kleidung bewahrt die Einzigartigkeit Ihres
@@ -307,11 +330,19 @@
             </p>
           </div>
           <div class="perfect-fit-image-container padding-horizontal">
-            <img
-              src="./images/additional-portaits/3.jpg"
-              alt="portrait"
-              loading="lazy"
-            />
+            <picture>
+              <source
+                srcset="./images/additional-portaits/3-400.webp 400w, ./images/additional-portaits/3-800.webp 800w"
+                sizes="(max-width: 700px) 80vw, 40vw"
+                type="image/webp"
+              />
+              <img
+                src="./images/additional-portaits/3.jpg"
+                alt="portrait"
+                style="aspect-ratio: 3442/5163"
+                loading="lazy"
+              />
+            </picture>
           </div>
         </div>
 
@@ -410,7 +441,10 @@
         <div class="map-container container padding-horizontal" id="map">
           <h2 class="center-text">Wo finden Sie uns</h2>
           <a href="https://maps.app.goo.gl/kr42mFzagvmnmQhq7" class="map-link">
-            <img src="/images/map.png" alt="map" class="map" loading="lazy" />
+            <picture>
+              <source srcset="./images/map-700.webp" type="image/webp" />
+              <img src="./images/map.png" alt="map" class="map" loading="lazy" />
+            </picture>
           </a>
           <!-- <iframe
           class="map"

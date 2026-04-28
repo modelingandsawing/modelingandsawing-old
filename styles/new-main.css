@@ -156,7 +156,7 @@ span.review-author::before {
   left: 0;
 }
 
-div.clothing-to-order-image > img {
+div.clothing-to-order-image img {
   width: calc(100% - 50px);
   margin-bottom: -30px;
 }
@@ -172,7 +172,6 @@ img.uniqueness-image {
   border: 5px solid white;
 
   width: min(90%, 400px);
-  height: min(90%, 400px);
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -273,7 +272,7 @@ div.perfect-fit-image-container {
   margin-bottom: 30px;
 }
 
-div.perfect-fit-image-container > img {
+div.perfect-fit-image-container img {
   width: 80%;
 }
 

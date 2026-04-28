@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="./styles/template.css" />
     <link rel="stylesheet" href="./styles/wedding-dresses.css" />
     <link rel="stylesheet" href="./styles/lightbox.css" />
+    <link rel="preconnect" href="https://i.ibb.co" />
+    <link rel="preload" href="./data/wedding-images.json" as="fetch" crossorigin />
     <meta
       name="description"
       content="Brautmode, Brautmode Jena, Festmode Jena, Festmode bei Jena, neben Jena, näher Jena, Brautmoden, Brautkleider und Hochzeitskleider in Jena, näher Jena"
@@ -69,10 +71,11 @@
             el.srcset = img.thumb + " 160w, " + img.medium + " 500w, " + img.full + " 1920w";
             el.sizes = "(max-width: 600px) 100vw, (max-width: 900px) 50vw, 33vw";
             el.className = "gallery-image";
-            el.loading = "lazy";
+            el.loading = imgIndex === 0 ? "eager" : "lazy";
+            if (imgIndex === 0) el.setAttribute("fetchpriority", "high");
             el.alt = "Brautkleid";
-            el.width = 300;
-            el.height = 400;
+            if (img.width) el.width = img.width;
+            if (img.height) el.height = img.height;
             containerEl.appendChild(el);
             containerEl.addEventListener("click", function() {
               lightbox.open(images, imgIndex);

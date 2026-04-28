@@ -3,12 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1:0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Maßschneiderei | Neuigkeiten</title>
     <link rel="icon" href="./images/icon.png" />
     <link rel="stylesheet" href="./styles/template.css" />
     <link rel="stylesheet" href="./styles/news.css" />
     <link rel="stylesheet" href="./styles/lightbox.css" />
+    <link rel="preconnect" href="https://i.ibb.co" />
+    <link rel="preload" href="./data/news-images.json" as="fetch" crossorigin />
   </head>
 
   <body>
@@ -56,6 +58,7 @@
         .then(function(groups) {
           var container = document.getElementById("container");
           var fragment = document.createDocumentFragment();
+          var firstImage = true;
           groups.forEach(function(group) {
             var groupEl = document.createElement("div");
             groupEl.className = "group";
@@ -79,9 +82,10 @@
               el.srcset = img.thumb + " 160w, " + img.medium + " 500w, " + img.full + " 1920w";
               el.sizes = "(max-width: 600px) 100vw, (max-width: 900px) 50vw, 33vw";
               el.className = "gallery-image";
-              el.loading = "lazy";
-              el.width = 300;
-              el.height = 400;
+              el.loading = firstImage ? "eager" : "lazy";
+              if (firstImage) { el.setAttribute("fetchpriority", "high"); firstImage = false; }
+              if (img.width) el.width = img.width;
+              if (img.height) el.height = img.height;
               containerEl.appendChild(el);
               containerEl.addEventListener("click", function() {
                 lightbox.open(enabledImages, imgIndex);
