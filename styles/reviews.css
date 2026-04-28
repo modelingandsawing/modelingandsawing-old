@@ -4,6 +4,7 @@ div#container {
   margin-bottom: 50px;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 30px;
 
   left: 50%;
@@ -39,7 +40,10 @@ div#container > div.group-content > div.gallery-image-container {
   left: 0;
 }
 
-div#container > div.group-content > div.gallery-image-container > img.gallery-image {
+div#container
+  > div.group-content
+  > div.gallery-image-container
+  > img.gallery-image {
   display: block;
   width: 100%;
   height: auto;
