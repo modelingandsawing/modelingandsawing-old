@@ -209,6 +209,37 @@ div.padding-vertical {
   padding-bottom: 50px;
 }
 
+@keyframes skeleton-shimmer {
+  from {
+    background-position: 200% 0;
+  }
+  to {
+    background-position: -200% 0;
+  }
+}
+
+img.skeleton-white {
+  background: linear-gradient(
+    90deg,
+    rgb(210, 210, 210) 25%,
+    rgb(235, 235, 235) 50%,
+    rgb(210, 210, 210) 75%
+  );
+  background-size: 600px 100%;
+  animation: skeleton-shimmer 1.5s ease-in-out infinite;
+}
+
+img.skeleton-primary {
+  background: linear-gradient(
+    90deg,
+    rgb(200, 183, 158) 25%,
+    rgb(225, 208, 183) 50%,
+    rgb(200, 183, 158) 75%
+  );
+  background-size: 600px 100%;
+  animation: skeleton-shimmer 1.5s ease-in-out infinite;
+}
+
 img.icon {
   width: 40px;
   height: 40px;

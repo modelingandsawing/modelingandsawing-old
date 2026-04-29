@@ -6,8 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Maßschneiderei</title>
     <link rel="icon" href="./images/icon.png" />
-    <link rel="preload" as="image" href="./images/background.svg" type="image/svg+xml" />
-    <link rel="preload" as="image" href="./images/portrait-800.webp" type="image/webp" />
+    <link
+      rel="preload"
+      as="image"
+      href="./images/background.svg"
+      type="image/svg+xml"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="./images/portrait-800.webp"
+      type="image/webp"
+    />
     <link rel="stylesheet" href="./styles/template.css" />
     <link rel="stylesheet" href="./styles/new-main.css" />
     <meta
@@ -55,7 +65,7 @@
           <img
             src="./images/portrait.jpg"
             alt="portrait"
-            class="portrait main-portrait"
+            class="portrait main-portrait skeleton-white"
             style="aspect-ratio: 1/1"
             fetchpriority="high"
           />
@@ -92,7 +102,7 @@
             <a href="#sewing" class="service">
               <img
                 src="./images/services-icons/sewing.jpg"
-                class="service-icon"
+                class="service-icon skeleton-white"
                 loading="lazy"
               />
               <h4 class="center-text">
@@ -102,7 +112,7 @@
             <a href="#wedding-dresses" class="service">
               <img
                 src="./images/services-icons/wedding-dresses.jpg"
-                class="service-icon"
+                class="service-icon skeleton-white"
                 loading="lazy"
               />
               <h4 class="center-text">
@@ -112,7 +122,7 @@
             <a href="#repair" class="service">
               <img
                 src="./images/services-icons/repair.jpg"
-                class="service-icon"
+                class="service-icon skeleton-white"
                 loading="lazy"
               />
               <h4 class="center-text">
@@ -124,7 +134,7 @@
             <a href="#fabric" class="service">
               <img
                 src="./images/services-icons/fabric.jpg"
-                class="service-icon"
+                class="service-icon skeleton-white"
                 loading="lazy"
               />
               <h4 class="center-text">
@@ -200,7 +210,10 @@
           <div class="clothing-to-order-image">
             <picture>
               <source
-                srcset="./images/additional-portaits/1-400.webp 400w, ./images/additional-portaits/1-800.webp 800w"
+                srcset="
+                  ./images/additional-portaits/1-400.webp 400w,
+                  ./images/additional-portaits/1-800.webp 800w
+                "
                 sizes="(max-width: 700px) 100vw, 50vw"
                 type="image/webp"
               />
@@ -209,6 +222,7 @@
                 alt="portrait"
                 style="aspect-ratio: 3329/4993"
                 loading="lazy"
+                class="skeleton-primary"
               />
             </picture>
           </div>
@@ -230,14 +244,17 @@
           <div class="uniqueness-container container">
             <picture>
               <source
-                srcset="./images/additional-portaits/2-400.webp 400w, ./images/additional-portaits/2-800.webp 800w"
+                srcset="
+                  ./images/additional-portaits/2-400.webp 400w,
+                  ./images/additional-portaits/2-800.webp 800w
+                "
                 sizes="(max-width: 444px) 90vw, 400px"
                 type="image/webp"
               />
               <img
                 src="./images/additional-portaits/2.jpg"
                 alt="portrait"
-                class="uniqueness-image"
+                class="uniqueness-image skeleton-white"
                 style="aspect-ratio: 3525/5287"
                 loading="lazy"
               />
@@ -294,7 +311,7 @@
             <div class="qualitative-secondary">
               <img
                 src="./images/services-icons/sewing2.jpg"
-                class="qualitative-icon"
+                class="qualitative-icon skeleton-primary"
                 loading="lazy"
               />
               <p>
@@ -332,7 +349,10 @@
           <div class="perfect-fit-image-container padding-horizontal">
             <picture>
               <source
-                srcset="./images/additional-portaits/3-400.webp 400w, ./images/additional-portaits/3-800.webp 800w"
+                srcset="
+                  ./images/additional-portaits/3-400.webp 400w,
+                  ./images/additional-portaits/3-800.webp 800w
+                "
                 sizes="(max-width: 700px) 80vw, 40vw"
                 type="image/webp"
               />
@@ -341,6 +361,7 @@
                 alt="portrait"
                 style="aspect-ratio: 3442/5163"
                 loading="lazy"
+                class="skeleton-primary"
               />
             </picture>
           </div>
@@ -443,7 +464,13 @@
           <a href="https://maps.app.goo.gl/kr42mFzagvmnmQhq7" class="map-link">
             <picture>
               <source srcset="./images/map-700.webp" type="image/webp" />
-              <img src="./images/map.png" alt="map" class="map" loading="lazy" />
+              <img
+                src="./images/map.png"
+                alt="map"
+                class="map skeleton-primary"
+                style="aspect-ratio: 871 / 673"
+                loading="lazy"
+              />
             </picture>
           </a>
           <!-- <iframe
